@@ -1,0 +1,96 @@
+# F&O Market Scanner — runtime settings
+# All times are IST (Asia/Kolkata). Secrets live in .env, never here.
+
+thresholds:            # highlight when change_percent > +T  or  < -T
+  previous_close: 5.0
+  premarket: 3.0
+  live: 2.0
+
+schedule:              # used by the Phase 2 scheduler
+  token_refresh: "08:15"
+  universe_build: "08:30"
+  previous_close: "08:45"
+  preopen_first_attempt: "09:10:00"
+  preopen_last_attempt: "09:14:30"
+  preopen_retry_seconds: 30
+  ws_connect: "09:14:00"
+  live_start: "09:15"
+  live_end: "15:30"
+  eod_archive: "15:35"
+  publish: "15:40"                # commit + push today's snapshot folder
+
+dhan:
+  base_url: "https://api.dhan.co/v2"
+  auth_url: "https://auth.dhan.co"
+  instrument_master_url: "https://images.dhan.co/api-data/api-scrip-master-detailed.csv"
+  feed_url: "wss://api-feed.dhan.co"   # market-feed WebSocket (v2)
+  token_method: "manual"          # "manual" (web token + RenewToken) or "totp" (fully automated)
+  quote_batch_size: 1000          # Dhan max instruments per quote request
+  quote_requests_per_second: 1    # Dhan quote API limit
+  historical_requests_per_second: 4
+  request_timeout_seconds: 15
+  max_retries: 4
+  history_lookback_days: 12       # calendar days fetched to find the last 2 sessions
+
+universe:
+  min_count: 150                  # sanity range for number of F&O stocks
+  max_count: 300
+  max_unmapped_ratio: 0.10        # max share of FUTSTK underlyings without an NSE_EQ match
+
+previous_close:
+  fetch_prior_close: true         # needs 1 historical call per stock (~1 min for ~220 stocks)
+  prev_close_tolerance_pct: 0.05  # quote vs historical close agreement
+
+nse:                             # pre-open source (public website, no credentials)
+  base_url: "https://www.nseindia.com"
+  request_timeout_seconds: 10
+  max_retries: 2
+
+premarket:
+  min_snapshot_time: "09:08"      # NSE snapshot must be at/after end of price discovery
+  prev_close_tolerance_pct: 0.05  # Dhan vs NSE previous close agreement
+
+live:
+  write_interval_seconds: 5
+  stale_after_seconds: 60
+  silence_reconnect_seconds: 60   # open socket with no data this long -> reconnect
+
+sector_thresholds:     # highlight a sector when its average change_percent > +T or < -T
+  previous_close: 2.0
+  premarket: 1.5
+  live: 1.0
+
+sectors:
+  method: equal_weight
+  min_coverage_pct: 50            # sector average only if >= this % of its stocks have a price
+
+run_day:
+  keep_awake: true               # ask Windows not to sleep while run-day is active (no settings changed)
+
+token:
+  renew_min_hours: 12            # renew-token --if-needed renews when fewer hours are left
+  warn_hours: 2                  # dashboard warns when the token expires within this
+
+publish:                         # daily commit + push of data/snapshots/<date>/ only
+  enabled: false                 # off until the GitHub remote is set up (Phase 5 step 2)
+  push: true                     # false = commit locally only
+  remote: "origin"
+  branch: "main"
+  timeout_seconds: 120
+
+preflight:
+  holiday_check_from: "12-01"    # from this date, alert if next year's holiday file is missing
+  min_free_disk_mb: 1024
+
+logging:
+  dir: "logs"                    # logs/<command>-YYYY-MM-DD.log, secrets scrubbed
+  retention_days: 30
+
+api:                             # python -m scanner serve / run-day --serve
+  host: "0.0.0.0"                # reachable from your Wi-Fi; requires DASHBOARD_TOKEN in .env
+  port: 8000                     # use --host 127.0.0.1 for this PC only (no token needed)
+
+paths:
+  data_dir: "data"
+  sectors_file: "config/sectors.json"
+  holidays_file: "config/nse_holidays_2026.json"

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>F&amp;O Scanner</title>
+  <link rel="stylesheet" href="/static/styles.css?v=4">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23137a4b'/%3E%3Cpath d='M3 11l3-3 2 2 5-5' stroke='white' stroke-width='1.8' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true"></span>
+      <div>
+        <h1>F&amp;O Scanner</h1>
+        <div class="sub"><span id="tradeDate">—</span> · <span id="phase" class="pill">—</span></div>
+      </div>
+    </div>
+    <div class="controls">
+      <label class="field">
+        <span>Day</span>
+        <select id="daySelect" aria-label="Day to show"><option value="">Today</option></select>
+      </label>
+      <span id="refresh" class="refresh" title="Auto-refresh">●</span>
+      <button id="themeBtn" class="icon-btn" type="button" aria-label="Toggle theme">◐</button>
+    </div>
+  </header>
+
+  <section id="statusBar" class="statusbar" aria-label="Data status"></section>
+  <section id="alerts" class="alerts" hidden></section>
+  <div id="tokenBanner" class="banner" hidden></div>
+  <div id="banner" class="banner" hidden></div>
+
+  <nav class="views" role="tablist" aria-label="View">
+    <button role="tab" data-view="scanner" class="view-btn">Scanner</button>
+    <button role="tab" data-view="details" class="view-btn">Details</button>
+  </nav>
+
+  <main id="scannerView" class="scanner">
+    <section class="panel scan" data-ds="previous_close">
+      <div class="panel-head"><h2>Previous Market</h2><span class="muted scan-meta"></span></div>
+      <div class="table-wrap"><table class="grid scan-table"></table></div>
+    </section>
+    <section class="panel scan" data-ds="premarket">
+      <div class="panel-head"><h2>Pre-Market</h2><span class="muted scan-meta"></span></div>
+      <div class="table-wrap"><table class="grid scan-table"></table></div>
+    </section>
+    <section class="panel scan" data-ds="live">
+      <div class="panel-head"><h2>Current Live Market</h2><span class="muted scan-meta"></span></div>
+      <div class="table-wrap"><table class="grid scan-table"></table></div>
+    </section>
+    <section class="panel scan common" data-ds="common">
+      <div class="panel-head"><h2>Common Stocks</h2><span class="muted scan-meta"></span></div>
+      <p class="scan-note muted">In all three lists above: Previous Market, Pre-Market and Current Live Market.</p>
+      <div class="table-wrap"><table class="grid scan-table"></table></div>
+    </section>
+  </main>
+
+  <div id="detailsView" hidden>
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="previous_close" class="tab">Previous close</button>
+    <button role="tab" data-tab="premarket" class="tab">Pre-open</button>
+    <button role="tab" data-tab="live" class="tab">Live</button>
+  </nav>
+
+  <main class="layout">
+    <aside class="panel sectors">
+      <div class="panel-head">
+        <h2>Sectors</h2>
+        <span id="sectorMeta" class="muted"></span>
+      </div>
+      <ol id="sectorList" class="sector-list"></ol>
+      <div id="sectorEmpty" class="empty" hidden></div>
+    </aside>
+
+    <section class="panel stocks">
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Search symbol" aria-label="Search symbol" autocomplete="off">
+        <select id="sectorFilter" aria-label="Sector filter"><option value="">All sectors</option></select>
+        <label class="check"><input id="hlOnly" type="checkbox"> Highlighted only</label>
+      </div>
+      <div id="summary" class="summary"></div>
+      <div id="datasetEmpty" class="empty" hidden></div>
+      <div class="tables">
+        <div class="table-wrap">
+          <h3>Gainers <span id="gCount" class="muted"></span></h3>
+          <table id="gainers" class="grid"></table>
+        </div>
+        <div class="table-wrap">
+          <h3>Losers <span id="lCount" class="muted"></span></h3>
+          <table id="losers" class="grid"></table>
+        </div>
+      </div>
+      <details class="table-wrap unchanged">
+        <summary>Unchanged / no data <span id="uCount" class="muted"></span></summary>
+        <table id="unchanged" class="grid"></table>
+      </details>
+    </section>
+  </main>
+  </div>
+
+  <dialog id="tokenDialog">
+    <form method="dialog" id="tokenForm">
+      <h2>Dashboard token</h2>
+      <p class="muted">This scanner is protected. Enter the DASHBOARD_TOKEN from the scanner's .env file.</p>
+      <input id="tokenInput" type="password" autocomplete="current-password" required aria-label="Dashboard token">
+      <p id="tokenError" class="error" hidden>Token not accepted.</p>
+      <div class="actions"><button type="submit" class="primary">Unlock</button></div>
+    </form>
+ </dialog>
+
+<script src="/static/app.js?v=5"></script>
+
+<script>
+setInterval(function() {
+    window.location.reload();
+}, 60000);
+</script>
+
+</body>
+</html>
