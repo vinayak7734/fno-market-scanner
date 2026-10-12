@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+httpx
+pandas
+numpy
+python-dotenv
+websockets
+dhanhq
