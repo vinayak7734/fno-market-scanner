@@ -1,12 +1,34 @@
 
-name: FNO Scanner Auth Test
+name: FNO Market Scanner
 
 on:
   workflow_dispatch:
+  schedule:
+    # IST 08:45 - Previous Close
+    - cron: '15 3 * * 1-5'
+    # IST 09:10 - Pre-Market
+    - cron: '40 3 * * 1-5'
+    # IST 09:15 to 15:15 - Live updates
+    - cron: '45 3-9 * * 1-5'
+    - cron: '15 4-9 * * 1-5'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fno-scanner
+  cancel-in-progress: false
 
 jobs:
-  scanner-test:
+  scanner:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    env:
+      TZ: Asia/Kolkata
+      DHAN_CLIENT_ID: ${{ secrets.DHAN_CLIENT_ID }}
+      DHAN_PIN: ${{ secrets.DHAN_PIN }}
+      DHAN_TOTP_SECRET: ${{ secrets.DHAN_TOTP_SECRET }}
 
     steps:
       - name: Checkout repository
@@ -20,12 +42,35 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Check scanner Python files
+      - name: Check Python files
         run: python -m compileall -q scanner
 
-      - name: Test Dhan automatic token
-        env:
-          DHAN_CLIENT_ID: ${{ secrets.DHAN_CLIENT_ID }}
-          DHAN_PIN: ${{ secrets.DHAN_PIN }}
-          DHAN_TOTP_SECRET: ${{ secrets.DHAN_TOTP_SECRET }}
+      - name: Check Dhan Authentication
         run: python -m scanner check-auth
+
+      - name: Run scheduled market scanner
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+        shell: bash
+        run: |
+          python -m scanner build-universe
+
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            python -m scanner previous-close
+          elif [ "$SCHEDULE" = "15 3 * * 1-5" ]; then
+            python -m scanner previous-close
+          elif [ "$SCHEDULE" = "40 3 * * 1-5" ]; then
+            python -m scanner premarket
+          else
+            python -m scanner live --minutes 10
+          fi
+
+      - name: Save scanner results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scanner-results-${{ github.run_id }}
+          path: data/
+          if-no-files-found: warn
+          retention-days: 7
