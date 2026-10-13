@@ -24,7 +24,7 @@ dhan:
   auth_url: "https://auth.dhan.co"
   instrument_master_url: "https://images.dhan.co/api-data/api-scrip-master-detailed.csv"
   feed_url: "wss://api-feed.dhan.co"   # market-feed WebSocket (v2)
-  token_method: "manual"          # "manual" (web token + RenewToken) or "totp" (fully automated)
+  token_method: "totp"            # "manual" (web token + RenewToken) or "totp" (fully automated)
   quote_batch_size: 1000          # Dhan max instruments per quote request
   quote_requests_per_second: 1    # Dhan quote API limit
   historical_requests_per_second: 4
