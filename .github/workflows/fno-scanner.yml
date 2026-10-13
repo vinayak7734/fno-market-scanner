@@ -1,5 +1,5 @@
 
-name: FNO Scanner Test
+name: FNO Scanner Auth Test
 
 on:
   workflow_dispatch:
@@ -17,8 +17,15 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
       - name: Check scanner Python files
         run: python -m compileall -q scanner
 
-      - name: Test completed
-        run: echo "FNO Scanner code check successful"
+      - name: Test Dhan automatic token
+        env:
+          DHAN_CLIENT_ID: ${{ secrets.DHAN_CLIENT_ID }}
+          DHAN_PIN: ${{ secrets.DHAN_PIN }}
+          DHAN_TOTP_SECRET: ${{ secrets.DHAN_TOTP_SECRET }}
+        run: python -m scanner check-auth
