@@ -1,0 +1,24 @@
+
+name: FNO Scanner Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  scanner-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check scanner Python files
+        run: python -m compileall -q scanner
+
+      - name: Test completed
+        run: echo "FNO Scanner code check successful"
