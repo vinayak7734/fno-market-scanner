@@ -72,7 +72,7 @@ token:
   warn_hours: 2                  # dashboard warns when the token expires within this
 
 publish:                         # daily commit + push of data/snapshots/<date>/ only
-  enabled: false                 # off until the GitHub remote is set up (Phase 5 step 2)
+  enabled: true                 # off until the GitHub remote is set up (Phase 5 step 2)
   push: true                     # false = commit locally only
   remote: "origin"
   branch: "main"
