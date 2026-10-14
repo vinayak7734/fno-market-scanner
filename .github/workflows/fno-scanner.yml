@@ -61,9 +61,12 @@ jobs:
       - name: Run selected market scan
         shell: bash
         env:
+          DHAN_PIN: ${{ secrets.DHAN_PIN }}
+          DHAN_TOTP_SECRET: ${{ secrets.DHAN_TOTP_SECRET }}
           EVENT: ${{ github.event_name }}
           CRON: ${{ github.event.schedule }}
           STAGE: ${{ inputs.stage }}
+
         run: |
           set -euo pipefail
           python -m scanner build-universe
