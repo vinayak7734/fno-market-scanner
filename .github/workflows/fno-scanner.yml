@@ -51,7 +51,13 @@ jobs:
           test -n "$DHAN_CLIENT_ID" || { echo 'Missing GitHub secret DHAN_CLIENT_ID'; exit 1; }
           test -n "$DHAN_ACCESS_TOKEN" || { echo 'Missing GitHub secret DHAN_ACCESS_TOKEN'; exit 1; }
       - name: Verify scanner credentials
+        env:
+          DHAN_CLIENT_ID: ${{ secrets.DHAN_CLIENT_ID }}
+          DHAN_ACCESS_TOKEN: ${{ secrets.DHAN_ACCESS_TOKEN }}
+          DHAN_PIN: ${{ secrets.DHAN_PIN }}
+          DHAN_TOTP_SECRET: ${{ secrets.DHAN_TOTP_SECRET }}
         run: python -m scanner check-auth
+        
       - name: Run selected market scan
         shell: bash
         env:
