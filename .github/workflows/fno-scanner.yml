@@ -1,72 +1,97 @@
-
-name: FNO Market Scanner
+name: FNO Scanner Data Jobs
 
 on:
   workflow_dispatch:
+    inputs:
+      stage:
+        description: 'Stage to run (default: previous-close)'
+        required: true
+        default: previous-close
+        type: choice
+        options:
+          - previous-close
+          - premarket
+          - live
   schedule:
-    # IST 08:45 - Previous Close
-    - cron: '15 3 * * 1-5'
-    # IST 09:10 - Pre-Market
-    - cron: '40 3 * * 1-5'
-    # IST 09:15 to 15:15 - Live updates
-    - cron: '45 3-9 * * 1-5'
-    - cron: '15 4-9 * * 1-5'
+    # GitHub schedules are UTC and can start late. Times below are IST.
+    - cron: '15 3 * * 1-5'     # 08:45 previous close
+    - cron: '40 3 * * 1-5'     # 09:10 premarket
+    - cron: '45 3-9 * * 1-5'   # 09:15-15:15 live every hour
+    - cron: '15 4-9 * * 1-5'   # 09:45-14:45 live every hour
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
-  group: fno-scanner
+  group: fno-data-writer
   cancel-in-progress: false
 
 jobs:
-  scanner:
+  scan:
     runs-on: ubuntu-latest
     timeout-minutes: 25
-
     env:
       TZ: Asia/Kolkata
       DHAN_CLIENT_ID: ${{ secrets.DHAN_CLIENT_ID }}
-      DHAN_PIN: ${{ secrets.DHAN_PIN }}
-      DHAN_TOTP_SECRET: ${{ secrets.DHAN_TOTP_SECRET }}
-
+      DHAN_ACCESS_TOKEN: ${{ secrets.DHAN_ACCESS_TOKEN }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
       - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Check Python files
-        run: python -m compileall -q scanner
-
-      - name: Check Dhan Authentication
-        run: python -m scanner check-auth
-
-      - name: Run scheduled market scanner
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip install PyYAML
+      - name: Validate credentials presence
         shell: bash
         run: |
+          test -n "$DHAN_CLIENT_ID" || { echo 'Missing GitHub secret DHAN_CLIENT_ID'; exit 1; }
+          test -n "$DHAN_ACCESS_TOKEN" || { echo 'Missing GitHub secret DHAN_ACCESS_TOKEN'; exit 1; }
+      - name: Verify scanner credentials
+        run: python -m scanner check-auth
+      - name: Run selected market scan
+        shell: bash
+        env:
+          EVENT: ${{ github.event_name }}
+          CRON: ${{ github.event.schedule }}
+          STAGE: ${{ inputs.stage }}
+        run: |
+          set -euo pipefail
           python -m scanner build-universe
-
-          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
-            python -m scanner previous-close
-          elif [ "$SCHEDULE" = "15 3 * * 1-5" ]; then
-            python -m scanner previous-close
-          elif [ "$SCHEDULE" = "40 3 * * 1-5" ]; then
-            python -m scanner premarket
+          if [ "$EVENT" = 'workflow_dispatch' ]; then
+            TASK="$STAGE"
+          elif [ "$CRON" = '15 3 * * 1-5' ]; then
+            TASK='previous-close'
+          elif [ "$CRON" = '40 3 * * 1-5' ]; then
+            TASK='premarket'
           else
-            python -m scanner live --minutes 10
+            TASK='live'
           fi
-
-      - name: Save scanner results
+          echo "Scanner stage: $TASK"
+          case "$TASK" in
+            previous-close) python -m scanner previous-close ;;
+            premarket) python -m scanner premarket ;;
+            live) python -m scanner live --minutes 8 ;;
+            *) echo 'Unknown stage'; exit 1 ;;
+          esac
+      - name: Publish non-secret result files to repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- data/latest data/snapshots
+          if git diff --cached --quiet; then
+            echo 'No new market files to publish'
+          else
+            git commit -m 'data: update FNO scanner datasets [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Upload result artifacts for debugging
         if: always()
         uses: actions/upload-artifact@v4
         with:
