@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>F&O Market Scanner</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f3f5f9;margin:0;padding:18px;color:#172033}
+h2{margin-bottom:5px}
+.info{color:#666;font-size:13px}
+.cards{display:flex;gap:12px;margin:20px 0;flex-wrap:wrap}
+.card{background:white;padding:18px;border-radius:10px;flex:1;min-width:120px}
+.card b{display:block;font-size:25px;margin-top:8px}
+.green{color:#16803c}
+.red{color:#d12b36}
+table{width:100%;border-collapse:collapse;background:white}
+th,td{padding:12px;text-align:left;border-bottom:1px solid #ddd}
+th{background:#202e48;color:white}
+button{padding:10px 18px;margin:8px 6px 12px 0;border:0;border-radius:6px;cursor:pointer;background:#202e48;color:white}
+.active{background:#147b49}
+#error{color:#c62828}
+</style>
+</head>
+<body>
+<h2>F&O Market Scanner</h2>
+<div class="info" id="date">Loading data...</div>
+<div class="cards">
+<div class="card">Above +5%<b class="green" id="up">0</b></div>
+<div class="card">Below -5%<b class="red" id="down">0</b></div>
+</div>
+<button onclick="show('all')" id="all">All</button>
+<button onclick="show('up')" id="upBtn">Above +5%</button>
+<button onclick="show('down')" id="downBtn">Below -5%</button>
+<button onclick="load()">Refresh</button>
+<p id="error"></p>
+<table>
+<thead><tr><th>Stock</th><th>Change %</th><th>Sector</th></tr></thead>
+<tbody id="rows"></tbody>
+</table>
+<script>
+const url="data/latest/previous_close.json";
+let stocks=[],filter="all";
+function show(f){filter=f;render()}
+function render(){
+let list=stocks.filter(x=>filter==="all"||x.group===filter);
+document.getElementById("rows").innerHTML=list.length?
+list.map(x=>`<tr><td>${esc(x.symbol)}</td><td class="${x.change>=0?'green':'red'}">${x.change.toFixed(2)}%</td><td>${esc(x.sector)}</td></tr>`).join(""):
+"<tr><td colspan='3'>No matching stocks</td></tr>";
+for(const [id,f] of [["all","all"],["upBtn","up"],["downBtn","down"]])
+document.getElementById(id).classList.toggle("active",filter===f);
+}
+function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+async function load(){
+try{
+document.getElementById("error").textContent="";
+const r=await fetch(url+"?t="+Date.now());
+if(!r.ok)throw Error("HTTP "+r.status);
+const data=await r.json();
+if(!Array.isArray(data.records))throw Error("Records format needs checking");
+stocks=data.records.map(x=>({
+symbol:x.symbol,
+sector:x.sector,
+change:Number(x.change_percent),
+group:Number(x.change_percent)>=5?"up":Number(x.change_percent)<=-5?"down":"other"
+})).filter(x=>Number.isFinite(x.change)&&x.group!=="other");
+document.getElementById("up").textContent=stocks.filter(x=>x.group==="up").length;
+document.getElementById("down").textContent=stocks.filter(x=>x.group==="down").length;
+document.getElementById("date").textContent="Trade Date: "+(data.trade_date||"Unknown");
+render();
+}catch(e){
+document.getElementById("error").textContent="Data loading failed: "+e.message;
+}
+}
+load();
+</script>
+</body>
+</html>
