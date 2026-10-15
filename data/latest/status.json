@@ -1,16 +1,16 @@
 {
   "token": {
     "method": "totp",
-    "expires_at": "2026-10-16T13:46:55+05:30",
+    "expires_at": "2026-10-16T14:04:55+05:30",
     "state": "ok",
-    "last_check": "2026-10-15T13:46:55+05:30",
+    "last_check": "2026-10-15T14:04:55+05:30",
     "last_result": "ok",
     "message": "check-auth"
   },
-  "updated_at": "2026-10-15T13:48:00+05:30",
+  "updated_at": "2026-10-15T14:05:03+05:30",
   "jobs": {
     "build_universe": {
-      "last_run": "2026-10-15T13:47:01+05:30",
+      "last_run": "2026-10-15T14:05:02+05:30",
       "result": "ok",
       "message": "213 F&O stocks"
     },
@@ -20,12 +20,12 @@
       "message": "213 stocks"
     },
     "sectors": {
-      "last_run": "2026-10-15T13:48:00+05:30",
+      "last_run": "2026-10-15T14:05:03+05:30",
       "result": "ok",
-      "message": "previous_close block updated"
+      "message": "premarket block updated"
     },
     "premarket": {
-      "last_run": "2026-10-14T14:30:59+05:30",
+      "last_run": "2026-10-15T14:05:03+05:30",
       "result": "ok",
       "message": "213 stocks"
     }
