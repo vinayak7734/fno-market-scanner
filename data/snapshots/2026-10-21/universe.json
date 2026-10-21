@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "dataset": "universe",
   "trade_date": "2026-10-21",
-  "generated_at": "2026-10-20T14:00:45+05:30",
+  "generated_at": "2026-10-21T14:22:09+05:30",
   "source": {
     "provider": "DHAN",
     "method": "instrument_master_detailed",
