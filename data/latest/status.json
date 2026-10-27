@@ -1,28 +1,28 @@
 {
   "token": {
     "method": "totp",
-    "expires_at": "2026-10-27T14:50:43+05:30",
+    "expires_at": "2026-10-28T14:27:45+05:30",
     "state": "ok",
-    "last_check": "2026-10-26T14:50:43+05:30",
+    "last_check": "2026-10-27T14:27:45+05:30",
     "last_result": "ok",
     "message": "check-auth"
   },
-  "updated_at": "2026-10-26T14:50:50+05:30",
+  "updated_at": "2026-10-27T14:28:45+05:30",
   "jobs": {
     "build_universe": {
-      "last_run": "2026-10-26T14:50:49+05:30",
+      "last_run": "2026-10-27T14:27:50+05:30",
       "result": "ok",
       "message": "213 F&O stocks"
     },
     "previous_close": {
-      "last_run": "2026-10-26T14:24:00+05:30",
+      "last_run": "2026-10-27T14:28:45+05:30",
       "result": "ok",
       "message": "213 stocks"
     },
     "sectors": {
-      "last_run": "2026-10-26T14:50:50+05:30",
+      "last_run": "2026-10-27T14:28:45+05:30",
       "result": "ok",
-      "message": "premarket block updated"
+      "message": "previous_close block updated"
     },
     "premarket": {
       "last_run": "2026-10-26T14:50:50+05:30",
@@ -34,12 +34,12 @@
     {
       "job": "build_universe",
       "message": "1 F&O stocks have no sector in sectors.json: ICICILIFE",
-      "at": "2026-10-26T14:50:49+05:30"
+      "at": "2026-10-27T14:27:50+05:30"
     },
     {
       "job": "build_universe",
       "message": "1 symbols in sectors.json are not in today's F&O universe (ignored): ICICIPRULI",
-      "at": "2026-10-26T14:50:49+05:30"
+      "at": "2026-10-27T14:27:50+05:30"
     }
   ]
 }

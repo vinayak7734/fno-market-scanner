@@ -1,0 +1,1512 @@
+{
+  "schema_version": "1.0",
+  "dataset": "universe",
+  "trade_date": "2026-10-27",
+  "generated_at": "2026-10-27T14:27:50+05:30",
+  "source": {
+    "provider": "DHAN",
+    "method": "instrument_master_detailed",
+    "file": "https://images.dhan.co/api-data/api-scrip-master-detailed.csv"
+  },
+  "status": "ok",
+  "status_reason": null,
+  "count": 213,
+  "stocks": [
+    {
+      "symbol": "360ONE",
+      "security_id": "13061",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 500,
+      "name": "360 ONE WAM LIMITED"
+    },
+    {
+      "symbol": "ABB",
+      "security_id": "13",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 125,
+      "name": "ABB INDIA LIMITED"
+    },
+    {
+      "symbol": "ABCAPITAL",
+      "security_id": "21614",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 3100,
+      "name": "ADITYA BIRLA CAPITAL LTD."
+    },
+    {
+      "symbol": "ADANIENSOL",
+      "security_id": "10217",
+      "sector": "Power",
+      "lot_size": 675,
+      "name": "ADANI ENERGY SOLUTION LTD"
+    },
+    {
+      "symbol": "ADANIENT",
+      "security_id": "25",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 309,
+      "name": "ADANI ENTERPRISES LIMITED"
+    },
+    {
+      "symbol": "ADANIGREEN",
+      "security_id": "3563",
+      "sector": "Power",
+      "lot_size": 600,
+      "name": "ADANI GREEN ENERGY LTD"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "security_id": "15083",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 475,
+      "name": "ADANI PORT & SEZ LTD"
+    },
+    {
+      "symbol": "ADANIPOWER",
+      "security_id": "17388",
+      "sector": "Power",
+      "lot_size": 3550,
+      "name": "ADANI POWER LTD"
+    },
+    {
+      "symbol": "ALKEM",
+      "security_id": "11703",
+      "sector": "Pharma",
+      "lot_size": 125,
+      "name": "ALKEM LABORATORIES LTD."
+    },
+    {
+      "symbol": "AMBER",
+      "security_id": "1185",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 100,
+      "name": "AMBER ENTERPRISES (I) LTD"
+    },
+    {
+      "symbol": "AMBUJACEM",
+      "security_id": "1270",
+      "sector": "Cement",
+      "lot_size": 1200,
+      "name": "AMBUJA CEMENTS LTD"
+    },
+    {
+      "symbol": "ANANDRATHI",
+      "security_id": "7145",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 250,
+      "name": "ANAND RATHI WEALTH LTD"
+    },
+    {
+      "symbol": "ANGELONE",
+      "security_id": "324",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 2500,
+      "name": "ANGEL ONE LIMITED"
+    },
+    {
+      "symbol": "APLAPOLLO",
+      "security_id": "25780",
+      "sector": "Metals & Mining",
+      "lot_size": 350,
+      "name": "APL APOLLO TUBES LTD"
+    },
+    {
+      "symbol": "APOLLOHOSP",
+      "security_id": "157",
+      "sector": "Healthcare",
+      "lot_size": 125,
+      "name": "APOLLO HOSPITALS ENTER. L"
+    },
+    {
+      "symbol": "ASHOKLEY",
+      "security_id": "212",
+      "sector": "Auto",
+      "lot_size": 5000,
+      "name": "ASHOK LEYLAND LTD"
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "security_id": "236",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 250,
+      "name": "ASIAN PAINTS LIMITED"
+    },
+    {
+      "symbol": "ASTRAL",
+      "security_id": "14418",
+      "sector": "Chemicals",
+      "lot_size": 425,
+      "name": "ASTRAL LIMITED"
+    },
+    {
+      "symbol": "ATHERENERG",
+      "security_id": "757645",
+      "sector": "Auto",
+      "lot_size": 375,
+      "name": "ATHER ENERGY LIMITED"
+    },
+    {
+      "symbol": "AUBANK",
+      "security_id": "21238",
+      "sector": "Private Banks",
+      "lot_size": 1000,
+      "name": "AU SMALL FINANCE BANK LTD"
+    },
+    {
+      "symbol": "AUROPHARMA",
+      "security_id": "275",
+      "sector": "Pharma",
+      "lot_size": 550,
+      "name": "AUROBINDO PHARMA LTD"
+    },
+    {
+      "symbol": "AXISBANK",
+      "security_id": "5900",
+      "sector": "Private Banks",
+      "lot_size": 625,
+      "name": "AXIS BANK LIMITED"
+    },
+    {
+      "symbol": "BAJAJ-AUTO",
+      "security_id": "16669",
+      "sector": "Auto",
+      "lot_size": 75,
+      "name": "BAJAJ AUTO LIMITED"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "security_id": "16675",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 300,
+      "name": "BAJAJ FINSERV LTD."
+    },
+    {
+      "symbol": "BAJAJHLDNG",
+      "security_id": "305",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 75,
+      "name": "BAJAJ HOLDINGS & INVS LTD"
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "security_id": "317",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 750,
+      "name": "BAJAJ FINANCE LIMITED"
+    },
+    {
+      "symbol": "BANDHANBNK",
+      "security_id": "2263",
+      "sector": "Private Banks",
+      "lot_size": 3600,
+      "name": "BANDHAN BANK LIMITED"
+    },
+    {
+      "symbol": "BANKBARODA",
+      "security_id": "4668",
+      "sector": "PSU Banks",
+      "lot_size": 2925,
+      "name": "BANK OF BARODA"
+    },
+    {
+      "symbol": "BANKINDIA",
+      "security_id": "4745",
+      "sector": "PSU Banks",
+      "lot_size": 5200,
+      "name": "BANK OF INDIA"
+    },
+    {
+      "symbol": "BDL",
+      "security_id": "2144",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 425,
+      "name": "BHARAT DYNAMICS LIMITED"
+    },
+    {
+      "symbol": "BEL",
+      "security_id": "383",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 1425,
+      "name": "BHARAT ELECTRONICS LTD"
+    },
+    {
+      "symbol": "BHARATFORG",
+      "security_id": "422",
+      "sector": "Auto Ancillaries",
+      "lot_size": 500,
+      "name": "BHARAT FORGE LTD"
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "security_id": "10604",
+      "sector": "Telecom & Media",
+      "lot_size": 475,
+      "name": "BHARTI AIRTEL LIMITED"
+    },
+    {
+      "symbol": "BHEL",
+      "security_id": "438",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 2625,
+      "name": "BHEL"
+    },
+    {
+      "symbol": "BIOCON",
+      "security_id": "11373",
+      "sector": "Pharma",
+      "lot_size": 2500,
+      "name": "BIOCON LIMITED."
+    },
+    {
+      "symbol": "BLUESTARCO",
+      "security_id": "8311",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 325,
+      "name": "BLUE STAR LIMITED"
+    },
+    {
+      "symbol": "BOSCHLTD",
+      "security_id": "2181",
+      "sector": "Auto Ancillaries",
+      "lot_size": 25,
+      "name": "BOSCH LIMITED"
+    },
+    {
+      "symbol": "BPCL",
+      "security_id": "526",
+      "sector": "Oil & Gas",
+      "lot_size": 1975,
+      "name": "BHARAT PETROLEUM CORP  LT"
+    },
+    {
+      "symbol": "BRITANNIA",
+      "security_id": "547",
+      "sector": "FMCG",
+      "lot_size": 125,
+      "name": "BRITANNIA INDUSTRIES LTD"
+    },
+    {
+      "symbol": "BSE",
+      "security_id": "19585",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 200,
+      "name": "BSE LIMITED"
+    },
+    {
+      "symbol": "CAMS",
+      "security_id": "342",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 825,
+      "name": "COMPUTER AGE MNGT SER LTD"
+    },
+    {
+      "symbol": "CANBK",
+      "security_id": "10794",
+      "sector": "PSU Banks",
+      "lot_size": 6750,
+      "name": "CANARA BANK"
+    },
+    {
+      "symbol": "CDSL",
+      "security_id": "21174",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 475,
+      "name": "CENTRAL DEPO SER (I) LTD"
+    },
+    {
+      "symbol": "CGPOWER",
+      "security_id": "760",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 850,
+      "name": "CG POWER AND IND SOL LTD"
+    },
+    {
+      "symbol": "CHOLAFIN",
+      "security_id": "685",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 625,
+      "name": "CHOLAMANDALAM IN & FIN CO"
+    },
+    {
+      "symbol": "CIPLA",
+      "security_id": "694",
+      "sector": "Pharma",
+      "lot_size": 425,
+      "name": "CIPLA LTD"
+    },
+    {
+      "symbol": "COALINDIA",
+      "security_id": "20374",
+      "sector": "Metals & Mining",
+      "lot_size": 1350,
+      "name": "COAL INDIA LTD"
+    },
+    {
+      "symbol": "COCHINSHIP",
+      "security_id": "21508",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 400,
+      "name": "COCHIN SHIPYARD LIMITED"
+    },
+    {
+      "symbol": "COFORGE",
+      "security_id": "11543",
+      "sector": "IT",
+      "lot_size": 475,
+      "name": "COFORGE LIMITED"
+    },
+    {
+      "symbol": "COLPAL",
+      "security_id": "15141",
+      "sector": "FMCG",
+      "lot_size": 275,
+      "name": "COLGATE PALMOLIVE LTD."
+    },
+    {
+      "symbol": "CONCOR",
+      "security_id": "4749",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 1250,
+      "name": "CONTAINER CORP OF IND LTD"
+    },
+    {
+      "symbol": "CROMPTON",
+      "security_id": "17094",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 2150,
+      "name": "CROMPT GREA CON ELEC LTD"
+    },
+    {
+      "symbol": "CUMMINSIND",
+      "security_id": "1901",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 200,
+      "name": "CUMMINS INDIA LTD"
+    },
+    {
+      "symbol": "DABUR",
+      "security_id": "772",
+      "sector": "FMCG",
+      "lot_size": 1250,
+      "name": "DABUR INDIA LTD"
+    },
+    {
+      "symbol": "DELHIVERY",
+      "security_id": "9599",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 2075,
+      "name": "DELHIVERY LIMITED"
+    },
+    {
+      "symbol": "DIVISLAB",
+      "security_id": "10940",
+      "sector": "Pharma",
+      "lot_size": 100,
+      "name": "DIVI S LABORATORIES LTD"
+    },
+    {
+      "symbol": "DIXON",
+      "security_id": "21690",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 50,
+      "name": "DIXON TECHNO (INDIA) LTD"
+    },
+    {
+      "symbol": "DLF",
+      "security_id": "14732",
+      "sector": "Realty",
+      "lot_size": 950,
+      "name": "DLF LIMITED"
+    },
+    {
+      "symbol": "DMART",
+      "security_id": "19913",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 150,
+      "name": "AVENUE SUPERMARTS LIMITED"
+    },
+    {
+      "symbol": "DRREDDY",
+      "security_id": "881",
+      "sector": "Pharma",
+      "lot_size": 625,
+      "name": "DR. REDDY S LABORATORIES"
+    },
+    {
+      "symbol": "EICHERMOT",
+      "security_id": "910",
+      "sector": "Auto",
+      "lot_size": 100,
+      "name": "EICHER MOTORS LTD"
+    },
+    {
+      "symbol": "ENRIN",
+      "security_id": "756871",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 175,
+      "name": "SIEMENS ENERGY INDIA LTD"
+    },
+    {
+      "symbol": "ETERNAL",
+      "security_id": "5097",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 2425,
+      "name": "ETERNAL LIMITED"
+    },
+    {
+      "symbol": "FEDERALBNK",
+      "security_id": "1023",
+      "sector": "Private Banks",
+      "lot_size": 2500,
+      "name": "FEDERAL BANK LTD"
+    },
+    {
+      "symbol": "FORCEMOT",
+      "security_id": "11573",
+      "sector": "Auto",
+      "lot_size": 25,
+      "name": "FORCE MOTORS LIMITED"
+    },
+    {
+      "symbol": "FORTIS",
+      "security_id": "14592",
+      "sector": "Healthcare",
+      "lot_size": 775,
+      "name": "FORTIS HEALTHCARE LTD"
+    },
+    {
+      "symbol": "GAIL",
+      "security_id": "4717",
+      "sector": "Oil & Gas",
+      "lot_size": 3550,
+      "name": "GAIL (INDIA) LTD"
+    },
+    {
+      "symbol": "GLENMARK",
+      "security_id": "7406",
+      "sector": "Pharma",
+      "lot_size": 375,
+      "name": "GLENMARK PHARMACEUTICALS"
+    },
+    {
+      "symbol": "GMRAIRPORT",
+      "security_id": "13528",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 6975,
+      "name": "GMR AIRPORTS LIMITED"
+    },
+    {
+      "symbol": "GODFRYPHLP",
+      "security_id": "1181",
+      "sector": "FMCG",
+      "lot_size": 275,
+      "name": "GODFREY PHILLIPS INDIA LT"
+    },
+    {
+      "symbol": "GODREJCP",
+      "security_id": "10099",
+      "sector": "FMCG",
+      "lot_size": 500,
+      "name": "GODREJ CONSUMER PRODUCTS"
+    },
+    {
+      "symbol": "GODREJPROP",
+      "security_id": "17875",
+      "sector": "Realty",
+      "lot_size": 325,
+      "name": "GODREJ PROPERTIES LTD"
+    },
+    {
+      "symbol": "GRASIM",
+      "security_id": "1232",
+      "sector": "Cement",
+      "lot_size": 250,
+      "name": "GRASIM INDUSTRIES LTD"
+    },
+    {
+      "symbol": "GVT&D",
+      "security_id": "16783",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 125,
+      "name": "GE VERNOVA T&D INDIA LTD"
+    },
+    {
+      "symbol": "HAL",
+      "security_id": "2303",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 150,
+      "name": "HINDUSTAN AERONAUTICS LTD"
+    },
+    {
+      "symbol": "HAVELLS",
+      "security_id": "9819",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 500,
+      "name": "HAVELLS INDIA LIMITED"
+    },
+    {
+      "symbol": "HCLTECH",
+      "security_id": "7229",
+      "sector": "IT",
+      "lot_size": 400,
+      "name": "HCL TECHNOLOGIES LTD"
+    },
+    {
+      "symbol": "HDFCAMC",
+      "security_id": "4244",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 300,
+      "name": "HDFC AMC LIMITED"
+    },
+    {
+      "symbol": "HDFCBANK",
+      "security_id": "1333",
+      "sector": "Private Banks",
+      "lot_size": 650,
+      "name": "HDFC BANK LTD"
+    },
+    {
+      "symbol": "HDFCLIFE",
+      "security_id": "467",
+      "sector": "Insurance",
+      "lot_size": 1100,
+      "name": "HDFC LIFE INS CO LTD"
+    },
+    {
+      "symbol": "HEROMOTOCO",
+      "security_id": "1348",
+      "sector": "Auto",
+      "lot_size": 150,
+      "name": "HERO MOTOCORP LIMITED"
+    },
+    {
+      "symbol": "HINDALCO",
+      "security_id": "1363",
+      "sector": "Metals & Mining",
+      "lot_size": 700,
+      "name": "HINDALCO  INDUSTRIES  LTD"
+    },
+    {
+      "symbol": "HINDPETRO",
+      "security_id": "1406",
+      "sector": "Oil & Gas",
+      "lot_size": 2025,
+      "name": "HINDUSTAN PETROLEUM CORP"
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "security_id": "1394",
+      "sector": "FMCG",
+      "lot_size": 300,
+      "name": "HINDUSTAN UNILEVER LTD."
+    },
+    {
+      "symbol": "HINDZINC",
+      "security_id": "1424",
+      "sector": "Metals & Mining",
+      "lot_size": 1225,
+      "name": "HINDUSTAN ZINC LIMITED"
+    },
+    {
+      "symbol": "HYUNDAI",
+      "security_id": "25844",
+      "sector": "Auto",
+      "lot_size": 275,
+      "name": "HYUNDAI MOTOR INDIA LTD"
+    },
+    {
+      "symbol": "ICICIBANK",
+      "security_id": "4963",
+      "sector": "Private Banks",
+      "lot_size": 700,
+      "name": "ICICI BANK LTD."
+    },
+    {
+      "symbol": "ICICIGI",
+      "security_id": "21770",
+      "sector": "Insurance",
+      "lot_size": 325,
+      "name": "ICICI LOMBARD GIC LIMITED"
+    },
+    {
+      "symbol": "ICICILIFE",
+      "security_id": "18652",
+      "sector": "Unmapped",
+      "lot_size": 925,
+      "name": "ICICI LIFE INSURANCE LTD"
+    },
+    {
+      "symbol": "IDEA",
+      "security_id": "14366",
+      "sector": "Telecom & Media",
+      "lot_size": 71475,
+      "name": "VODAFONE IDEA LIMITED"
+    },
+    {
+      "symbol": "IDFCFIRSTB",
+      "security_id": "11184",
+      "sector": "Private Banks",
+      "lot_size": 9275,
+      "name": "IDFC FIRST BANK LIMITED"
+    },
+    {
+      "symbol": "IEX",
+      "security_id": "220",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 4350,
+      "name": "INDIAN ENERGY EXC LTD"
+    },
+    {
+      "symbol": "INDHOTEL",
+      "security_id": "1512",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 1000,
+      "name": "THE INDIAN HOTELS CO. LTD"
+    },
+    {
+      "symbol": "INDIANB",
+      "security_id": "14309",
+      "sector": "PSU Banks",
+      "lot_size": 1000,
+      "name": "INDIAN BANK"
+    },
+    {
+      "symbol": "INDIGO",
+      "security_id": "11195",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 150,
+      "name": "INTERGLOBE AVIATION LTD"
+    },
+    {
+      "symbol": "INDUSINDBK",
+      "security_id": "5258",
+      "sector": "Private Banks",
+      "lot_size": 700,
+      "name": "INDUSIND BANK LIMITED"
+    },
+    {
+      "symbol": "INDUSTOWER",
+      "security_id": "29135",
+      "sector": "Telecom & Media",
+      "lot_size": 1700,
+      "name": "INDUS TOWERS LIMITED"
+    },
+    {
+      "symbol": "INFY",
+      "security_id": "1594",
+      "sector": "IT",
+      "lot_size": 400,
+      "name": "INFOSYS LIMITED"
+    },
+    {
+      "symbol": "INOXWIND",
+      "security_id": "7852",
+      "sector": "Power",
+      "lot_size": 6400,
+      "name": "INOX WIND LIMITED"
+    },
+    {
+      "symbol": "IOC",
+      "security_id": "1624",
+      "sector": "Oil & Gas",
+      "lot_size": 4875,
+      "name": "INDIAN OIL CORP LTD"
+    },
+    {
+      "symbol": "IREDA",
+      "security_id": "20261",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 4525,
+      "name": "INDIAN RENEWABLE ENERGY"
+    },
+    {
+      "symbol": "IRFC",
+      "security_id": "2029",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 5425,
+      "name": "INDIAN RAILWAY FIN CORP L"
+    },
+    {
+      "symbol": "ITC",
+      "security_id": "1660",
+      "sector": "FMCG",
+      "lot_size": 1725,
+      "name": "ITC LTD"
+    },
+    {
+      "symbol": "JINDALSTEL",
+      "security_id": "6733",
+      "sector": "Metals & Mining",
+      "lot_size": 625,
+      "name": "JINDAL STEEL LIMITED"
+    },
+    {
+      "symbol": "JIOFIN",
+      "security_id": "18143",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 2350,
+      "name": "JIO FIN SERVICES LTD"
+    },
+    {
+      "symbol": "JSWENERGY",
+      "security_id": "17869",
+      "sector": "Power",
+      "lot_size": 1075,
+      "name": "JSW ENERGY LIMITED"
+    },
+    {
+      "symbol": "JSWSTEEL",
+      "security_id": "11723",
+      "sector": "Metals & Mining",
+      "lot_size": 675,
+      "name": "JSW STEEL LIMITED"
+    },
+    {
+      "symbol": "JUBLFOOD",
+      "security_id": "18096",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 1250,
+      "name": "JUBILANT FOODWORKS LTD"
+    },
+    {
+      "symbol": "KALYANKJIL",
+      "security_id": "2955",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 1350,
+      "name": "KALYAN JEWELLERS IND LTD"
+    },
+    {
+      "symbol": "KAYNES",
+      "security_id": "12092",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 150,
+      "name": "KAYNES TECHNOLOGY IND LTD"
+    },
+    {
+      "symbol": "KEI",
+      "security_id": "13310",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 175,
+      "name": "KEI INDUSTRIES LTD."
+    },
+    {
+      "symbol": "KFINTECH",
+      "security_id": "13359",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 575,
+      "name": "KFIN TECHNOLOGIES LIMITED"
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "security_id": "1922",
+      "sector": "Private Banks",
+      "lot_size": 2000,
+      "name": "KOTAK MAHINDRA BANK LTD"
+    },
+    {
+      "symbol": "KPITTECH",
+      "security_id": "9683",
+      "sector": "IT",
+      "lot_size": 775,
+      "name": "KPIT TECHNOLOGIES LIMITED"
+    },
+    {
+      "symbol": "LAURUSLABS",
+      "security_id": "19234",
+      "sector": "Pharma",
+      "lot_size": 850,
+      "name": "LAURUS LABS LIMITED"
+    },
+    {
+      "symbol": "LICHSGFIN",
+      "security_id": "1997",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 1000,
+      "name": "LIC HOUSING FINANCE LTD"
+    },
+    {
+      "symbol": "LICI",
+      "security_id": "9480",
+      "sector": "Insurance",
+      "lot_size": 1400,
+      "name": "LIFE INSURA CORP OF INDIA"
+    },
+    {
+      "symbol": "LODHA",
+      "security_id": "3220",
+      "sector": "Realty",
+      "lot_size": 625,
+      "name": "LODHA DEVELOPERS LIMITED"
+    },
+    {
+      "symbol": "LT",
+      "security_id": "11483",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 175,
+      "name": "LARSEN & TOUBRO LTD."
+    },
+    {
+      "symbol": "LTF",
+      "security_id": "24948",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 2250,
+      "name": "L&T FINANCE LIMITED"
+    },
+    {
+      "symbol": "LTM",
+      "security_id": "17818",
+      "sector": "IT",
+      "lot_size": 150,
+      "name": "LTM LIMITED"
+    },
+    {
+      "symbol": "LUPIN",
+      "security_id": "10440",
+      "sector": "Pharma",
+      "lot_size": 425,
+      "name": "LUPIN LIMITED"
+    },
+    {
+      "symbol": "M&M",
+      "security_id": "2031",
+      "sector": "Auto",
+      "lot_size": 200,
+      "name": "MAHINDRA & MAHINDRA LTD"
+    },
+    {
+      "symbol": "MAHABANK",
+      "security_id": "11377",
+      "sector": "PSU Banks",
+      "lot_size": 6500,
+      "name": "BANK OF MAHARASHTRA"
+    },
+    {
+      "symbol": "MANAPPURAM",
+      "security_id": "19061",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 3000,
+      "name": "MANAPPURAM FINANCE LTD"
+    },
+    {
+      "symbol": "MANKIND",
+      "security_id": "15380",
+      "sector": "Pharma",
+      "lot_size": 250,
+      "name": "MANKIND PHARMA LIMITED"
+    },
+    {
+      "symbol": "MARICO",
+      "security_id": "4067",
+      "sector": "FMCG",
+      "lot_size": 1200,
+      "name": "MARICO LIMITED"
+    },
+    {
+      "symbol": "MARUTI",
+      "security_id": "10999",
+      "sector": "Auto",
+      "lot_size": 50,
+      "name": "MARUTI SUZUKI INDIA LTD."
+    },
+    {
+      "symbol": "MAXHEALTH",
+      "security_id": "22377",
+      "sector": "Healthcare",
+      "lot_size": 525,
+      "name": "MAX HEALTHCARE INS LTD"
+    },
+    {
+      "symbol": "MAZDOCK",
+      "security_id": "509",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 225,
+      "name": "MAZAGON DOCK SHIPBUIL LTD"
+    },
+    {
+      "symbol": "MCX",
+      "security_id": "31181",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 225,
+      "name": "MULTI COMMODITY EXCHANGE"
+    },
+    {
+      "symbol": "MFSL",
+      "security_id": "2142",
+      "sector": "Insurance",
+      "lot_size": 400,
+      "name": "MAX FINANCIAL SERV LTD"
+    },
+    {
+      "symbol": "MOTHERSON",
+      "security_id": "4204",
+      "sector": "Auto Ancillaries",
+      "lot_size": 6150,
+      "name": "SAMVRDHNA MTHRSN INTL LTD"
+    },
+    {
+      "symbol": "MOTILALOFS",
+      "security_id": "14947",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 775,
+      "name": "MOTILAL OSWAL FIN LTD"
+    },
+    {
+      "symbol": "MPHASIS",
+      "security_id": "4503",
+      "sector": "IT",
+      "lot_size": 275,
+      "name": "MPHASIS LIMITED"
+    },
+    {
+      "symbol": "MUTHOOTFIN",
+      "security_id": "23650",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 275,
+      "name": "MUTHOOT FINANCE LIMITED"
+    },
+    {
+      "symbol": "NAM-INDIA",
+      "security_id": "357",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 625,
+      "name": "NIPPON L I A M LTD"
+    },
+    {
+      "symbol": "NATIONALUM",
+      "security_id": "6364",
+      "sector": "Metals & Mining",
+      "lot_size": 1875,
+      "name": "NATIONAL ALUMINIUM CO LTD"
+    },
+    {
+      "symbol": "NAUKRI",
+      "security_id": "13751",
+      "sector": "IT",
+      "lot_size": 550,
+      "name": "INFO EDGE (I) LTD"
+    },
+    {
+      "symbol": "NBCC",
+      "security_id": "31415",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 6500,
+      "name": "NBCC (INDIA) LIMITED"
+    },
+    {
+      "symbol": "NESTLEIND",
+      "security_id": "17963",
+      "sector": "FMCG",
+      "lot_size": 500,
+      "name": "NESTLE INDIA LIMITED"
+    },
+    {
+      "symbol": "NHPC",
+      "security_id": "17400",
+      "sector": "Power",
+      "lot_size": 6950,
+      "name": "NHPC LTD"
+    },
+    {
+      "symbol": "NMDC",
+      "security_id": "15332",
+      "sector": "Metals & Mining",
+      "lot_size": 6750,
+      "name": "NMDC LTD."
+    },
+    {
+      "symbol": "NTPC",
+      "security_id": "11630",
+      "sector": "Power",
+      "lot_size": 1500,
+      "name": "NTPC LTD"
+    },
+    {
+      "symbol": "NYKAA",
+      "security_id": "6545",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 3125,
+      "name": "FSN E COMMERCE VENTURES"
+    },
+    {
+      "symbol": "OBEROIRLTY",
+      "security_id": "20242",
+      "sector": "Realty",
+      "lot_size": 350,
+      "name": "OBEROI REALTY LIMITED"
+    },
+    {
+      "symbol": "OFSS",
+      "security_id": "10738",
+      "sector": "IT",
+      "lot_size": 100,
+      "name": "ORACLE FIN SERV SOFT LTD."
+    },
+    {
+      "symbol": "OIL",
+      "security_id": "17438",
+      "sector": "Oil & Gas",
+      "lot_size": 1400,
+      "name": "OIL INDIA LTD"
+    },
+    {
+      "symbol": "ONGC",
+      "security_id": "2475",
+      "sector": "Oil & Gas",
+      "lot_size": 2250,
+      "name": "OIL AND NATURAL GAS CORP."
+    },
+    {
+      "symbol": "PAGEIND",
+      "security_id": "14413",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 20,
+      "name": "PAGE INDUSTRIES LTD"
+    },
+    {
+      "symbol": "PATANJALI",
+      "security_id": "17029",
+      "sector": "FMCG",
+      "lot_size": 1075,
+      "name": "PATANJALI FOODS LIMITED"
+    },
+    {
+      "symbol": "PAYTM",
+      "security_id": "6705",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 725,
+      "name": "ONE 97 COMMUNICATIONS LTD"
+    },
+    {
+      "symbol": "PERSISTENT",
+      "security_id": "18365",
+      "sector": "IT",
+      "lot_size": 125,
+      "name": "PERSISTENT SYSTEMS LTD"
+    },
+    {
+      "symbol": "PETRONET",
+      "security_id": "11351",
+      "sector": "Oil & Gas",
+      "lot_size": 1900,
+      "name": "PETRONET LNG LIMITED"
+    },
+    {
+      "symbol": "PFC",
+      "security_id": "14299",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 1300,
+      "name": "POWER FIN CORP LTD."
+    },
+    {
+      "symbol": "PGEL",
+      "security_id": "25358",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 950,
+      "name": "PG ELECTROPLAST LTD"
+    },
+    {
+      "symbol": "PHOENIXLTD",
+      "security_id": "14552",
+      "sector": "Realty",
+      "lot_size": 350,
+      "name": "THE PHOENIX MILLS LTD"
+    },
+    {
+      "symbol": "PIDILITIND",
+      "security_id": "2664",
+      "sector": "Chemicals",
+      "lot_size": 500,
+      "name": "PIDILITE INDUSTRIES LTD"
+    },
+    {
+      "symbol": "PIIND",
+      "security_id": "24184",
+      "sector": "Chemicals",
+      "lot_size": 175,
+      "name": "PI INDUSTRIES LTD"
+    },
+    {
+      "symbol": "PNB",
+      "security_id": "10666",
+      "sector": "PSU Banks",
+      "lot_size": 8000,
+      "name": "PUNJAB NATIONAL BANK"
+    },
+    {
+      "symbol": "PNBHOUSING",
+      "security_id": "18908",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 650,
+      "name": "PNB HOUSING FIN LTD."
+    },
+    {
+      "symbol": "POLICYBZR",
+      "security_id": "6656",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 350,
+      "name": "PB FINTECH LIMITED"
+    },
+    {
+      "symbol": "POLYCAB",
+      "security_id": "9590",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 125,
+      "name": "POLYCAB INDIA LIMITED"
+    },
+    {
+      "symbol": "POWERGRID",
+      "security_id": "14977",
+      "sector": "Power",
+      "lot_size": 1900,
+      "name": "POWER GRID CORP. LTD."
+    },
+    {
+      "symbol": "POWERINDIA",
+      "security_id": "18457",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 25,
+      "name": "HITACHI ENERGY INDIA LTD"
+    },
+    {
+      "symbol": "PREMIERENE",
+      "security_id": "25049",
+      "sector": "Power",
+      "lot_size": 650,
+      "name": "PREMIER ENERGIES LIMITED"
+    },
+    {
+      "symbol": "PRESTIGE",
+      "security_id": "20302",
+      "sector": "Realty",
+      "lot_size": 450,
+      "name": "PRESTIGE ESTATE LTD"
+    },
+    {
+      "symbol": "RADICO",
+      "security_id": "10990",
+      "sector": "FMCG",
+      "lot_size": 150,
+      "name": "RADICO KHAITAN LTD"
+    },
+    {
+      "symbol": "RBLBANK",
+      "security_id": "18391",
+      "sector": "Private Banks",
+      "lot_size": 3175,
+      "name": "RBL BANK LIMITED"
+    },
+    {
+      "symbol": "RECLTD",
+      "security_id": "15355",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 1575,
+      "name": "REC LIMITED"
+    },
+    {
+      "symbol": "RELIANCE",
+      "security_id": "2885",
+      "sector": "Oil & Gas",
+      "lot_size": 500,
+      "name": "RELIANCE INDUSTRIES LTD"
+    },
+    {
+      "symbol": "RVNL",
+      "security_id": "9552",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 1925,
+      "name": "RAIL VIKAS NIGAM LIMITED"
+    },
+    {
+      "symbol": "SAGILITY",
+      "security_id": "27052",
+      "sector": "IT",
+      "lot_size": 12000,
+      "name": "SAGILITY LIMITED"
+    },
+    {
+      "symbol": "SAIL",
+      "security_id": "2963",
+      "sector": "Metals & Mining",
+      "lot_size": 4700,
+      "name": "STEEL AUTHORITY OF INDIA"
+    },
+    {
+      "symbol": "SBICARD",
+      "security_id": "17971",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 800,
+      "name": "SBI CARDS & PAY SER LTD"
+    },
+    {
+      "symbol": "SBILIFE",
+      "security_id": "21808",
+      "sector": "Insurance",
+      "lot_size": 375,
+      "name": "SBI LIFE INSURANCE CO LTD"
+    },
+    {
+      "symbol": "SBIN",
+      "security_id": "3045",
+      "sector": "PSU Banks",
+      "lot_size": 750,
+      "name": "STATE BANK OF INDIA"
+    },
+    {
+      "symbol": "SHREECEM",
+      "security_id": "3103",
+      "sector": "Cement",
+      "lot_size": 25,
+      "name": "SHREE CEMENT LIMITED"
+    },
+    {
+      "symbol": "SHRIRAMFIN",
+      "security_id": "4306",
+      "sector": "NBFC & Financial Services",
+      "lot_size": 825,
+      "name": "SHRIRAM FINANCE LIMITED"
+    },
+    {
+      "symbol": "SIEMENS",
+      "security_id": "3150",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 175,
+      "name": "SIEMENS LTD"
+    },
+    {
+      "symbol": "SOLARINDS",
+      "security_id": "13332",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 50,
+      "name": "SOLAR INDUSTRIES (I) LTD"
+    },
+    {
+      "symbol": "SONACOMS",
+      "security_id": "4684",
+      "sector": "Auto Ancillaries",
+      "lot_size": 1225,
+      "name": "SONA BLW PRECISION FRGS L"
+    },
+    {
+      "symbol": "SRF",
+      "security_id": "3273",
+      "sector": "Chemicals",
+      "lot_size": 200,
+      "name": "SRF LTD"
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "security_id": "3351",
+      "sector": "Pharma",
+      "lot_size": 350,
+      "name": "SUN PHARMACEUTICAL IND L"
+    },
+    {
+      "symbol": "SUPREMEIND",
+      "security_id": "3363",
+      "sector": "Capital Goods & Infra",
+      "lot_size": 175,
+      "name": "SUPREME INDUSTRIES LTD"
+    },
+    {
+      "symbol": "SUZLON",
+      "security_id": "12018",
+      "sector": "Power",
+      "lot_size": 12700,
+      "name": "SUZLON ENERGY LIMITED"
+    },
+    {
+      "symbol": "SWIGGY",
+      "security_id": "27066",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 1825,
+      "name": "SWIGGY LIMITED"
+    },
+    {
+      "symbol": "TATACONSUM",
+      "security_id": "3432",
+      "sector": "FMCG",
+      "lot_size": 550,
+      "name": "TATA CONSUMER PRODUCT LTD"
+    },
+    {
+      "symbol": "TATAELXSI",
+      "security_id": "3411",
+      "sector": "IT",
+      "lot_size": 125,
+      "name": "TATA ELXSI LIMITED"
+    },
+    {
+      "symbol": "TATAPOWER",
+      "security_id": "3426",
+      "sector": "Power",
+      "lot_size": 1450,
+      "name": "TATA POWER CO LTD"
+    },
+    {
+      "symbol": "TATASTEEL",
+      "security_id": "3499",
+      "sector": "Metals & Mining",
+      "lot_size": 2750,
+      "name": "TATA STEEL LIMITED"
+    },
+    {
+      "symbol": "TCS",
+      "security_id": "11536",
+      "sector": "IT",
+      "lot_size": 225,
+      "name": "TATA CONSULTANCY SERV LT"
+    },
+    {
+      "symbol": "TECHM",
+      "security_id": "13538",
+      "sector": "IT",
+      "lot_size": 600,
+      "name": "TECH MAHINDRA LIMITED"
+    },
+    {
+      "symbol": "TIINDIA",
+      "security_id": "312",
+      "sector": "Auto Ancillaries",
+      "lot_size": 200,
+      "name": "TUBE INVEST OF INDIA LTD"
+    },
+    {
+      "symbol": "TITAN",
+      "security_id": "3506",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 175,
+      "name": "TITAN COMPANY LIMITED"
+    },
+    {
+      "symbol": "TMPV",
+      "security_id": "3456",
+      "sector": "Auto",
+      "lot_size": 1600,
+      "name": "TATA MOTORS PASS VEH LTD"
+    },
+    {
+      "symbol": "TORNTPHARM",
+      "security_id": "3518",
+      "sector": "Pharma",
+      "lot_size": 125,
+      "name": "TORRENT PHARMACEUTICALS L"
+    },
+    {
+      "symbol": "TRENT",
+      "security_id": "1964",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 225,
+      "name": "TRENT LTD"
+    },
+    {
+      "symbol": "TVSMOTOR",
+      "security_id": "8479",
+      "sector": "Auto",
+      "lot_size": 175,
+      "name": "TVS MOTOR COMPANY  LTD"
+    },
+    {
+      "symbol": "UJJIVANSFB",
+      "security_id": "15228",
+      "sector": "Private Banks",
+      "lot_size": 8000,
+      "name": "UJJIVAN SMALL FINANC BANK"
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "security_id": "11532",
+      "sector": "Cement",
+      "lot_size": 50,
+      "name": "ULTRATECH CEMENT LIMITED"
+    },
+    {
+      "symbol": "UNIONBANK",
+      "security_id": "10753",
+      "sector": "PSU Banks",
+      "lot_size": 4425,
+      "name": "UNION BANK OF INDIA"
+    },
+    {
+      "symbol": "UNITDSPR",
+      "security_id": "10447",
+      "sector": "FMCG",
+      "lot_size": 400,
+      "name": "UNITED SPIRITS LIMITED"
+    },
+    {
+      "symbol": "UNOMINDA",
+      "security_id": "14154",
+      "sector": "Auto Ancillaries",
+      "lot_size": 550,
+      "name": "UNO MINDA LIMITED"
+    },
+    {
+      "symbol": "UPL",
+      "security_id": "11287",
+      "sector": "Chemicals",
+      "lot_size": 1355,
+      "name": "UPL LIMITED"
+    },
+    {
+      "symbol": "VBL",
+      "security_id": "18921",
+      "sector": "FMCG",
+      "lot_size": 1275,
+      "name": "VARUN BEVERAGES LIMITED"
+    },
+    {
+      "symbol": "VEDL",
+      "security_id": "3063",
+      "sector": "Metals & Mining",
+      "lot_size": 1150,
+      "name": "VEDANTA LIMITED"
+    },
+    {
+      "symbol": "VMM",
+      "security_id": "27969",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 4850,
+      "name": "VISHAL MEGA MART LIMITED"
+    },
+    {
+      "symbol": "VOLTAS",
+      "security_id": "3718",
+      "sector": "Consumer Durables & Retail",
+      "lot_size": 375,
+      "name": "VOLTAS LTD"
+    },
+    {
+      "symbol": "WAAREEENER",
+      "security_id": "25907",
+      "sector": "Power",
+      "lot_size": 175,
+      "name": "WAAREE ENERGIES LIMITED"
+    },
+    {
+      "symbol": "WIPRO",
+      "security_id": "3787",
+      "sector": "IT",
+      "lot_size": 3000,
+      "name": "WIPRO LTD"
+    },
+    {
+      "symbol": "YESBANK",
+      "security_id": "11915",
+      "sector": "Private Banks",
+      "lot_size": 31100,
+      "name": "YES BANK LIMITED"
+    },
+    {
+      "symbol": "ZYDUSLIFE",
+      "security_id": "7929",
+      "sector": "Pharma",
+      "lot_size": 900,
+      "name": "ZYDUS LIFESCIENCES LTD"
+    }
+  ],
+  "unmapped_sector": [
+    "ICICILIFE"
+  ],
+  "missing_equity": [],
+  "mapped_by_symbol": []
+}
