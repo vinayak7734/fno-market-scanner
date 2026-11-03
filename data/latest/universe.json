@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "dataset": "universe",
-  "trade_date": "2026-10-30",
-  "generated_at": "2026-10-30T15:56:46+05:30",
+  "trade_date": "2026-11-03",
+  "generated_at": "2026-11-03T16:20:09+05:30",
   "source": {
     "provider": "DHAN",
     "method": "instrument_master_detailed",
@@ -1178,7 +1178,7 @@
       "symbol": "POLYCAB",
       "security_id": "9590",
       "sector": "Capital Goods & Infra",
-      "lot_size": 125,
+      "lot_size": 75,
       "name": "POLYCAB INDIA LIMITED"
     },
     {
