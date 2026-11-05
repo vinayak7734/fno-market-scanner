@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "dataset": "universe",
-  "trade_date": "2026-11-04",
-  "generated_at": "2026-11-04T17:02:28+05:30",
+  "trade_date": "2026-11-05",
+  "generated_at": "2026-11-05T16:22:43+05:30",
   "source": {
     "provider": "DHAN",
     "method": "instrument_master_detailed",
