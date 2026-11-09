@@ -1,16 +1,16 @@
 {
   "token": {
     "method": "totp",
-    "expires_at": "2026-11-10T16:58:08+05:30",
+    "expires_at": "2026-11-10T17:34:59+05:30",
     "state": "ok",
-    "last_check": "2026-11-09T16:58:09+05:30",
+    "last_check": "2026-11-09T17:34:59+05:30",
     "last_result": "ok",
     "message": "check-auth"
   },
-  "updated_at": "2026-11-09T16:59:19+05:30",
+  "updated_at": "2026-11-09T17:35:06+05:30",
   "jobs": {
     "build_universe": {
-      "last_run": "2026-11-09T16:58:14+05:30",
+      "last_run": "2026-11-09T17:35:04+05:30",
       "result": "ok",
       "message": "218 F&O stocks"
     },
@@ -20,32 +20,17 @@
       "message": "218 stocks"
     },
     "sectors": {
-      "last_run": "2026-11-09T16:59:19+05:30",
+      "last_run": "2026-11-09T17:35:06+05:30",
       "result": "ok",
-      "message": "previous_close block updated"
+      "message": "premarket block updated"
     },
     "premarket": {
-      "last_run": "2026-11-05T16:58:45+05:30",
+      "last_run": "2026-11-09T17:35:06+05:30",
       "result": "ok",
       "message": "218 stocks"
     }
   },
   "alerts": [
-    {
-      "job": "premarket",
-      "message": "215 Dhan/NSE previous-close mismatches: 360ONE (Dhan 1140.90 vs NSE 1068.70), ABB (Dhan 6628.00 vs NSE 6750.00), ABCAPITAL (Dhan 396.10 vs NSE 379.95), ADANIENSOL (Dhan 1446.70 vs NSE 1414.00), ADANIENT (Dhan 2733.30 vs NSE 2709.20), ADANIGREEN (Dhan 1414.90 vs NSE 1388.00), ADANIPORTS (Dhan 1884.60 vs NSE 1910.00), ADANIPOWER (Dhan 204.00 vs NSE 201.71), ALKEM (Dhan 5190.00 vs NSE 5216.50), AMBER (Dhan 6585.00 vs NSE 6460.00), AMBUJACEM (Dhan 388.00 vs NSE 375.95), ANANDRATHI (Dhan 2370.00 vs NSE 2296.00), ANGELONE (Dhan 326.15 vs NSE 312.10), APLAPOLLO (Dhan 2194.20 vs NSE 2199.80), APOLLOHOSP (Dhan 8371.00 vs NSE 8599.50), ASHOKLEY (Dhan 170.21 vs NSE 154.03), ASIANPAINT (Dhan 2523.80 vs NSE 2418.30), ASTRAL (Dhan 1388.00 vs NSE 1423.70), ATHERENERG (Dhan 1778.60 vs NSE 1840.00), AUBANK (Dhan 941.00 vs NSE 904.35)",
-      "at": "2026-11-05T16:58:45+05:30"
-    },
-    {
-      "job": "build_universe",
-      "message": "7 F&O stocks have no sector in sectors.json: COROMANDEL, CUB, DATAPATTNS, ICICILIFE, KARURVYSYA, NAVINFLUOR, SYRMA",
-      "at": "2026-11-09T16:58:14+05:30"
-    },
-    {
-      "job": "build_universe",
-      "message": "2 symbols in sectors.json are not in today's F&O universe (ignored): BAJAJHLDNG, ICICIPRULI",
-      "at": "2026-11-09T16:58:14+05:30"
-    },
     {
       "job": "previous_close",
       "message": "Holiday calendar expected last session 2026-11-06, Dhan candles show 2026-11-08; using 2026-11-08. Check config/nse_holidays_*.json",
@@ -55,6 +40,21 @@
       "job": "previous_close",
       "message": "213 quote/candle previous-close mismatches: 360ONE (quote 1138.00 vs candle 1134.45), ABB (quote 6915.00 vs candle 6859.50), ABCAPITAL (quote 401.65 vs candle 397.00), ADANIENSOL (quote 1439.10 vs candle 1450.00), ADANIENT (quote 2706.30 vs candle 2731.00), ADANIGREEN (quote 1448.90 vs candle 1417.00), ADANIPORTS (quote 1942.70 vs candle 1949.30), ADANIPOWER (quote 206.00 vs candle 204.40), ALKEM (quote 5398.50 vs candle 5304.00), AMBER (quote 6230.00 vs candle 6354.00), AMBUJACEM (quote 389.55 vs candle 395.65), ANANDRATHI (quote 2370.00 vs candle 2372.00), ANGELONE (quote 338.00 vs candle 332.85), APLAPOLLO (quote 2181.30 vs candle 2186.00), APOLLOHOSP (quote 8549.50 vs candle 8430.00), ASHOKLEY (quote 174.86 vs candle 178.00), ASIANPAINT (quote 2509.30 vs candle 2529.00), ASTRAL (quote 1272.80 vs candle 1260.00), ATHERENERG (quote 1859.80 vs candle 1822.90), AUROPHARMA (quote 1855.30 vs candle 1804.00)",
       "at": "2026-11-09T16:59:19+05:30"
+    },
+    {
+      "job": "build_universe",
+      "message": "7 F&O stocks have no sector in sectors.json: COROMANDEL, CUB, DATAPATTNS, ICICILIFE, KARURVYSYA, NAVINFLUOR, SYRMA",
+      "at": "2026-11-09T17:35:04+05:30"
+    },
+    {
+      "job": "build_universe",
+      "message": "2 symbols in sectors.json are not in today's F&O universe (ignored): BAJAJHLDNG, ICICIPRULI",
+      "at": "2026-11-09T17:35:04+05:30"
+    },
+    {
+      "job": "premarket",
+      "message": "213 Dhan/NSE previous-close mismatches: 360ONE (Dhan 1138.00 vs NSE 1134.45), ABB (Dhan 6915.00 vs NSE 6859.50), ABCAPITAL (Dhan 401.65 vs NSE 397.00), ADANIENSOL (Dhan 1439.10 vs NSE 1450.00), ADANIENT (Dhan 2706.30 vs NSE 2731.00), ADANIGREEN (Dhan 1448.90 vs NSE 1417.00), ADANIPORTS (Dhan 1942.70 vs NSE 1949.30), ADANIPOWER (Dhan 206.00 vs NSE 204.40), ALKEM (Dhan 5398.50 vs NSE 5304.00), AMBER (Dhan 6230.00 vs NSE 6354.00), AMBUJACEM (Dhan 389.55 vs NSE 395.65), ANANDRATHI (Dhan 2370.00 vs NSE 2372.00), ANGELONE (Dhan 338.00 vs NSE 332.85), APLAPOLLO (Dhan 2181.30 vs NSE 2186.00), APOLLOHOSP (Dhan 8549.50 vs NSE 8430.00), ASHOKLEY (Dhan 174.86 vs NSE 178.00), ASIANPAINT (Dhan 2509.30 vs NSE 2529.00), ASTRAL (Dhan 1272.80 vs NSE 1260.00), ATHERENERG (Dhan 1859.80 vs NSE 1822.90), AUROPHARMA (Dhan 1855.30 vs NSE 1804.00)",
+      "at": "2026-11-09T17:35:06+05:30"
     }
   ]
 }
