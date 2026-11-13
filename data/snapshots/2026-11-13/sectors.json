@@ -1,0 +1,754 @@
+{
+  "schema_version": "1.0",
+  "dataset": "sectors",
+  "trade_date": "2026-11-13",
+  "generated_at": "2026-11-13T16:27:19+05:30",
+  "method": "equal_weight",
+  "min_coverage_pct": 50.0,
+  "thresholds": {
+    "previous_close": {
+      "up": 2.0,
+      "down": -2.0
+    },
+    "premarket": {
+      "up": 1.5,
+      "down": -1.5
+    },
+    "live": {
+      "up": 1.0,
+      "down": -1.0
+    }
+  },
+  "status": "ok",
+  "previous_close": {
+    "dataset": "previous_close",
+    "source_generated_at": "2026-11-13T16:27:19+05:30",
+    "source_status": "ok",
+    "status": "ok",
+    "thresholds": {
+      "up": 2.0,
+      "down": -2.0
+    },
+    "summary": {
+      "sectors": 19,
+      "with_average": 19,
+      "advancing": 7,
+      "declining": 12,
+      "highlighted_up": 2,
+      "highlighted_down": 2,
+      "missing": 0
+    },
+    "sectors": [
+      {
+        "sector": "Realty",
+        "constituents": 6,
+        "priced": 6,
+        "coverage_pct": 100.0,
+        "avg_change_percent": 2.94,
+        "highlight": "UP",
+        "advances": 6,
+        "declines": 0,
+        "unchanged": 0,
+        "highlighted_up": 0,
+        "highlighted_down": 0,
+        "top_gainer": {
+          "symbol": "PHOENIXLTD",
+          "change_percent": 3.87
+        },
+        "top_loser": null,
+        "status": "ok",
+        "symbols": [
+          "DLF",
+          "GODREJPROP",
+          "LODHA",
+          "OBEROIRLTY",
+          "PHOENIXLTD",
+          "PRESTIGE"
+        ],
+        "rank": 1
+      },
+      {
+        "sector": "Insurance",
+        "constituents": 5,
+        "priced": 5,
+        "coverage_pct": 100.0,
+        "avg_change_percent": 2.55,
+        "highlight": "UP",
+        "advances": 4,
+        "declines": 1,
+        "unchanged": 0,
+        "highlighted_up": 1,
+        "highlighted_down": 0,
+        "top_gainer": {
+          "symbol": "MFSL",
+          "change_percent": 7.53
+        },
+        "top_loser": {
+          "symbol": "LICI",
+          "change_percent": -0.17
+        },
+        "status": "ok",
+        "symbols": [
+          "HDFCLIFE",
+          "ICICIGI",
+          "LICI",
+          "MFSL",
+          "SBILIFE"
+        ],
+        "rank": 2
+      },
+      {
+        "sector": "NBFC & Financial Services",
+        "constituents": 30,
+        "priced": 30,
+        "coverage_pct": 100.0,
+        "avg_change_percent": 1.17,
+        "highlight": null,
+        "advances": 19,
+        "declines": 11,
+        "unchanged": 0,
+        "highlighted_up": 3,
+        "highlighted_down": 0,
+        "top_gainer": {
+          "symbol": "POLICYBZR",
+          "change_percent": 13.22
+        },
+        "top_loser": {
+          "symbol": "IRFC",
+          "change_percent": -3.92
+        },
+        "status": "ok",
+        "symbols": [
+          "360ONE",
+          "ABCAPITAL",
+          "ANANDRATHI",
+          "ANGELONE",
+          "BAJAJFINSV",
+          "BAJFINANCE",
+          "BSE",
+          "CAMS",
+          "CDSL",
+          "CHOLAFIN",
+          "HDFCAMC",
+          "IEX",
+          "IREDA",
+          "IRFC",
+          "JIOFIN",
+          "KFINTECH",
+          "LICHSGFIN",
+          "LTF",
+          "MANAPPURAM",
+          "MCX",
+          "MOTILALOFS",
+          "MUTHOOTFIN",
+          "NAM-INDIA",
+          "PAYTM",
+          "PFC",
+          "PNBHOUSING",
+          "POLICYBZR",
+          "RECLTD",
+          "SBICARD",
+          "SHRIRAMFIN"
+        ],
+        "rank": 3
+      },
+      {
+        "sector": "PSU Banks",
+        "constituents": 8,
+        "priced": 8,
+        "coverage_pct": 100.0,
+        "avg_change_percent": 0.94,
+        "highlight": null,
+        "advances": 5,
+        "declines": 3,
+        "unchanged": 0,
+        "highlighted_up": 0,
+        "highlighted_down": 0,
+        "top_gainer": {
+          "symbol": "PNB",
+          "change_percent": 3.13
+        },
+        "top_loser": {
+          "symbol": "CANBK",
+          "change_percent": -1.05
+        },
+        "status": "ok",
+        "symbols": [
+          "BANKBARODA",
+          "BANKINDIA",
+          "CANBK",
+          "INDIANB",
+          "MAHABANK",
+          "PNB",
+          "SBIN",
+          "UNIONBANK"
+        ],
+        "rank": 4
+      },
+      {
+        "sector": "Private Banks",
+        "constituents": 12,
+        "priced": 12,
+        "coverage_pct": 100.0,
+        "avg_change_percent": 0.27,
+        "highlight": null,
+        "advances": 6,
+        "declines": 6,
+        "unchanged": 0,
+        "highlighted_up": 0,
+        "highlighted_down": 0,
+        "top_gainer": {
+          "symbol": "AUBANK",
+          "change_percent": 1.67
+        },
+        "top_loser": {
+          "symbol": "IDFCFIRSTB",
+          "change_percent": -0.86
+        },
+        "status": "ok",
+        "symbols": [
+          "AUBANK",
+          "AXISBANK",
+          "BANDHANBNK",
+          "FEDERALBNK",
+          "HDFCBANK",
+          "ICICIBANK",
+          "IDFCFIRSTB",
+          "INDUSINDBK",
+          "KOTAKBANK",
+          "RBLBANK",
+          "UJJIVANSFB",
+          "YESBANK"
+        ],
+        "rank": 5
+      },
+      {
+        "sector": "Capital Goods & Infra",
+        "constituents": 27,
+        "priced": 27,
+        "coverage_pct": 100.0,
+        "avg_change_percent": 0.09,
+        "highlight": null,
+        "advances": 11,
+        "declines": 15,
+        "unchanged": 1,
+        "highlighted_up": 2,
+        "highlighted_down": 1,
+        "top_gainer": {
+          "symbol": "POWERINDIA",
+          "change_percent": 8.57
+        },
+        "top_loser": {
+          "symbol": "BDL",
+          "change_percent": -6.36
+        },
+        "status": "ok",
+        "symbols": [
+          "ABB",
+          "ADANIENT",
+          "ADANIPORTS",
+          "BDL",
+          "BEL",
+          "BHEL",
+          "CGPOWER",
+          "COCHINSHIP",
+          "CONCOR",
+          "CUMMINSIND",
+          "DELHIVERY",
+          "ENRIN",
+          "GMRAIRPORT",
+          "GVT&D",
+          "HAL",
+          "INDIGO",
+          "KAYNES",
+          "KEI",
+          "LT",
+          "MAZDOCK",
+          "NBCC",
+          "POLYCAB",
+          "POWERINDIA",
+          "RVNL",
+          "SIEMENS",
+          "SOLARINDS",
+          "SUPREMEIND"
+        ],
+        "rank": 6
+      },
+      {
+        "sector": "Healthcare",
+        "constituents": 3,
+        "priced": 3,
+        "coverage_pct": 100.0,
+        "avg_change_percent": 0.03,
+        "highlight": null,
+        "advances": 1,
+        "declines": 2,
+        "unchanged": 0,
+        "highlighted_up": 0,
+        "highlighted_down": 0,
+        "top_gainer": {
+          "symbol": "MAXHEALTH",
+          "change_percent": 2.03
+        },
+        "top_loser": {
+          "symbol": "FORTIS",
+          "change_percent": -1.04
+        },
+        "status": "ok",
+        "symbols": [
+          "APOLLOHOSP",
+          "FORTIS",
+          "MAXHEALTH"
+        ],
+        "rank": 7
+      },
+      {
+        "sector": "Consumer Durables & Retail",
+        "constituents": 19,
+        "priced": 19,
+        "coverage_pct": 100.0,
+        "avg_change_percent": -0.14,
+        "highlight": null,
+        "advances": 9,
+        "declines": 10,
+        "unchanged": 0,
+        "highlighted_up": 2,
+        "highlighted_down": 1,
+        "top_gainer": {
+          "symbol": "AMBER",
+          "change_percent": 9.31
+        },
+        "top_loser": {
+          "symbol": "PAGEIND",
+          "change_percent": -14.34
+        },
+        "status": "ok",
+        "symbols": [
+          "AMBER",
+          "ASIANPAINT",
+          "BLUESTARCO",
+          "CROMPTON",
+          "DIXON",
+          "DMART",
+          "ETERNAL",
+          "HAVELLS",
+          "INDHOTEL",
+          "JUBLFOOD",
+          "KALYANKJIL",
+          "NYKAA",
+          "PAGEIND",
+          "PGEL",
+          "SWIGGY",
+          "TITAN",
+          "TRENT",
+          "VMM",
+          "VOLTAS"
+        ],
+        "rank": 8
+      },
+      {
+        "sector": "IT",
+        "constituents": 14,
+        "priced": 14,
+        "coverage_pct": 100.0,
+        "avg_change_percent": -0.39,
+        "highlight": null,
+        "advances": 5,
+        "declines": 9,
+        "unchanged": 0,
+        "highlighted_up": 0,
+        "highlighted_down": 0,
+        "top_gainer": {
+          "symbol": "MPHASIS",
+          "change_percent": 2.72
+        },
+        "top_loser": {
+          "symbol": "TCS",
+          "change_percent": -2.61
+        },
+        "status": "ok",
+        "symbols": [
+          "COFORGE",
+          "HCLTECH",
+          "INFY",
+          "KPITTECH",
+          "LTM",
+          "MPHASIS",
+          "NAUKRI",
+          "OFSS",
+          "PERSISTENT",
+          "SAGILITY",
+          "TATAELXSI",
+          "TCS",
+          "TECHM",
+          "WIPRO"
+        ],
+        "rank": 9
+      },
+      {
+        "sector": "FMCG",
+        "constituents": 14,
+        "priced": 14,
+        "coverage_pct": 100.0,
+        "avg_change_percent": -0.77,
+        "highlight": null,
+        "advances": 2,
+        "declines": 11,
+        "unchanged": 1,
+        "highlighted_up": 0,
+        "highlighted_down": 0,
+        "top_gainer": {
+          "symbol": "RADICO",
+          "change_percent": 3.71
+        },
+        "top_loser": {
+          "symbol": "MARICO",
+          "change_percent": -2.7
+        },
+        "status": "ok",
+        "symbols": [
+          "BRITANNIA",
+          "COLPAL",
+          "DABUR",
+          "GODFRYPHLP",
+          "GODREJCP",
+          "HINDUNILVR",
+          "ITC",
+          "MARICO",
+          "NESTLEIND",
+          "PATANJALI",
+          "RADICO",
+          "TATACONSUM",
+          "UNITDSPR",
+          "VBL"
+        ],
+        "rank": 10
+      },
+      {
+        "sector": "Metals & Mining",
+        "constituents": 11,
+        "priced": 11,
+        "coverage_pct": 100.0,
+        "avg_change_percent": -0.82,
+        "highlight": null,
+        "advances": 3,
+        "declines": 8,
+        "unchanged": 0,
+        "highlighted_up": 0,
+        "highlighted_down": 0,
+        "top_gainer": {
+          "symbol": "APLAPOLLO",
+          "change_percent": 2.44
+        },
+        "top_loser": {
+          "symbol": "HINDZINC",
+          "change_percent": -4.17
+        },
+        "status": "ok",
+        "symbols": [
+          "APLAPOLLO",
+          "COALINDIA",
+          "HINDALCO",
+          "HINDZINC",
+          "JINDALSTEL",
+          "JSWSTEEL",
+          "NATIONALUM",
+          "NMDC",
+          "SAIL",
+          "TATASTEEL",
+          "VEDL"
+        ],
+        "rank": 11
+      },
+      {
+        "sector": "Auto Ancillaries",
+        "constituents": 6,
+        "priced": 6,
+        "coverage_pct": 100.0,
+        "avg_change_percent": -0.96,
+        "highlight": null,
+        "advances": 2,
+        "declines": 4,
+        "unchanged": 0,
+        "highlighted_up": 0,
+        "highlighted_down": 0,
+        "top_gainer": {
+          "symbol": "UNOMINDA",
+          "change_percent": 1.09
+        },
+        "top_loser": {
+          "symbol": "MOTHERSON",
+          "change_percent": -2.88
+        },
+        "status": "ok",
+        "symbols": [
+          "BHARATFORG",
+          "BOSCHLTD",
+          "MOTHERSON",
+          "SONACOMS",
+          "TIINDIA",
+          "UNOMINDA"
+        ],
+        "rank": 12
+      },
+      {
+        "sector": "Telecom & Media",
+        "constituents": 3,
+        "priced": 3,
+        "coverage_pct": 100.0,
+        "avg_change_percent": -0.98,
+        "highlight": null,
+        "advances": 0,
+        "declines": 3,
+        "unchanged": 0,
+        "highlighted_up": 0,
+        "highlighted_down": 0,
+        "top_gainer": null,
+        "top_loser": {
+          "symbol": "IDEA",
+          "change_percent": -2.41
+        },
+        "status": "ok",
+        "symbols": [
+          "BHARTIARTL",
+          "IDEA",
+          "INDUSTOWER"
+        ],
+        "rank": 13
+      },
+      {
+        "sector": "Power",
+        "constituents": 12,
+        "priced": 12,
+        "coverage_pct": 100.0,
+        "avg_change_percent": -0.99,
+        "highlight": null,
+        "advances": 4,
+        "declines": 8,
+        "unchanged": 0,
+        "highlighted_up": 0,
+        "highlighted_down": 0,
+        "top_gainer": {
+          "symbol": "WAAREEENER",
+          "change_percent": 1.84
+        },
+        "top_loser": {
+          "symbol": "TATAPOWER",
+          "change_percent": -3.33
+        },
+        "status": "ok",
+        "symbols": [
+          "ADANIENSOL",
+          "ADANIGREEN",
+          "ADANIPOWER",
+          "INOXWIND",
+          "JSWENERGY",
+          "NHPC",
+          "NTPC",
+          "POWERGRID",
+          "PREMIERENE",
+          "SUZLON",
+          "TATAPOWER",
+          "WAAREEENER"
+        ],
+        "rank": 14
+      },
+      {
+        "sector": "Pharma",
+        "constituents": 13,
+        "priced": 13,
+        "coverage_pct": 100.0,
+        "avg_change_percent": -1.3,
+        "highlight": null,
+        "advances": 2,
+        "declines": 11,
+        "unchanged": 0,
+        "highlighted_up": 0,
+        "highlighted_down": 1,
+        "top_gainer": {
+          "symbol": "DIVISLAB",
+          "change_percent": 0.66
+        },
+        "top_loser": {
+          "symbol": "ALKEM",
+          "change_percent": -6.13
+        },
+        "status": "ok",
+        "symbols": [
+          "ALKEM",
+          "AUROPHARMA",
+          "BIOCON",
+          "CIPLA",
+          "DIVISLAB",
+          "DRREDDY",
+          "GLENMARK",
+          "LAURUSLABS",
+          "LUPIN",
+          "MANKIND",
+          "SUNPHARMA",
+          "TORNTPHARM",
+          "ZYDUSLIFE"
+        ],
+        "rank": 15
+      },
+      {
+        "sector": "Auto",
+        "constituents": 11,
+        "priced": 11,
+        "coverage_pct": 100.0,
+        "avg_change_percent": -1.42,
+        "highlight": null,
+        "advances": 3,
+        "declines": 8,
+        "unchanged": 0,
+        "highlighted_up": 0,
+        "highlighted_down": 0,
+        "top_gainer": {
+          "symbol": "ATHERENERG",
+          "change_percent": 4.11
+        },
+        "top_loser": {
+          "symbol": "TMPV",
+          "change_percent": -3.96
+        },
+        "status": "ok",
+        "symbols": [
+          "ASHOKLEY",
+          "ATHERENERG",
+          "BAJAJ-AUTO",
+          "EICHERMOT",
+          "FORCEMOT",
+          "HEROMOTOCO",
+          "HYUNDAI",
+          "M&M",
+          "MARUTI",
+          "TMPV",
+          "TVSMOTOR"
+        ],
+        "rank": 16
+      },
+      {
+        "sector": "Chemicals",
+        "constituents": 5,
+        "priced": 5,
+        "coverage_pct": 100.0,
+        "avg_change_percent": -1.6,
+        "highlight": null,
+        "advances": 1,
+        "declines": 4,
+        "unchanged": 0,
+        "highlighted_up": 0,
+        "highlighted_down": 0,
+        "top_gainer": {
+          "symbol": "UPL",
+          "change_percent": 0.85
+        },
+        "top_loser": {
+          "symbol": "PIDILITIND",
+          "change_percent": -3.09
+        },
+        "status": "ok",
+        "symbols": [
+          "ASTRAL",
+          "PIDILITIND",
+          "PIIND",
+          "SRF",
+          "UPL"
+        ],
+        "rank": 17
+      },
+      {
+        "sector": "Oil & Gas",
+        "constituents": 8,
+        "priced": 8,
+        "coverage_pct": 100.0,
+        "avg_change_percent": -2.42,
+        "highlight": "DOWN",
+        "advances": 1,
+        "declines": 7,
+        "unchanged": 0,
+        "highlighted_up": 0,
+        "highlighted_down": 0,
+        "top_gainer": {
+          "symbol": "RELIANCE",
+          "change_percent": 0.32
+        },
+        "top_loser": {
+          "symbol": "HINDPETRO",
+          "change_percent": -4.66
+        },
+        "status": "ok",
+        "symbols": [
+          "BPCL",
+          "GAIL",
+          "HINDPETRO",
+          "IOC",
+          "OIL",
+          "ONGC",
+          "PETRONET",
+          "RELIANCE"
+        ],
+        "rank": 18
+      },
+      {
+        "sector": "Cement",
+        "constituents": 4,
+        "priced": 4,
+        "coverage_pct": 100.0,
+        "avg_change_percent": -2.65,
+        "highlight": "DOWN",
+        "advances": 0,
+        "declines": 4,
+        "unchanged": 0,
+        "highlighted_up": 0,
+        "highlighted_down": 0,
+        "top_gainer": null,
+        "top_loser": {
+          "symbol": "GRASIM",
+          "change_percent": -3.89
+        },
+        "status": "ok",
+        "symbols": [
+          "AMBUJACEM",
+          "GRASIM",
+          "SHREECEM",
+          "ULTRACEMCO"
+        ],
+        "rank": 19
+      }
+    ],
+    "unmapped": {
+      "sector": "Unmapped",
+      "constituents": 7,
+      "priced": 7,
+      "coverage_pct": 100.0,
+      "avg_change_percent": 1.09,
+      "highlight": null,
+      "advances": 4,
+      "declines": 3,
+      "unchanged": 0,
+      "highlighted_up": 1,
+      "highlighted_down": 0,
+      "top_gainer": {
+        "symbol": "DATAPATTNS",
+        "change_percent": 5.33
+      },
+      "top_loser": {
+        "symbol": "COROMANDEL",
+        "change_percent": -1.81
+      },
+      "status": "ok",
+      "symbols": [
+        "COROMANDEL",
+        "CUB",
+        "DATAPATTNS",
+        "ICICILIFE",
+        "KARURVYSYA",
+        "NAVINFLUOR",
+        "SYRMA"
+      ]
+    }
+  },
+  "premarket": null,
+  "live": null
+}
