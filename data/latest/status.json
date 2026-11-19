@@ -1,26 +1,26 @@
 {
   "token": {
     "method": "totp",
-    "expires_at": "2026-11-19T17:08:37+05:30",
+    "expires_at": "2026-11-20T17:06:43+05:30",
     "state": "ok",
-    "last_check": "2026-11-18T17:08:37+05:30",
+    "last_check": "2026-11-19T17:06:43+05:30",
     "last_result": "ok",
     "message": "check-auth"
   },
-  "updated_at": "2026-11-18T17:09:45+05:30",
+  "updated_at": "2026-11-19T17:09:11+05:30",
   "jobs": {
     "build_universe": {
-      "last_run": "2026-11-18T17:08:44+05:30",
+      "last_run": "2026-11-19T17:06:48+05:30",
       "result": "ok",
       "message": "218 F&O stocks"
     },
     "previous_close": {
-      "last_run": "2026-11-18T17:09:45+05:30",
+      "last_run": "2026-11-19T17:09:11+05:30",
       "result": "ok",
       "message": "218 stocks"
     },
     "sectors": {
-      "last_run": "2026-11-18T17:09:45+05:30",
+      "last_run": "2026-11-19T17:09:11+05:30",
       "result": "ok",
       "message": "previous_close block updated"
     },
@@ -39,17 +39,17 @@
     {
       "job": "build_universe",
       "message": "7 F&O stocks have no sector in sectors.json: COROMANDEL, CUB, DATAPATTNS, ICICILIFE, KARURVYSYA, NAVINFLUOR, SYRMA",
-      "at": "2026-11-18T17:08:44+05:30"
+      "at": "2026-11-19T17:06:48+05:30"
     },
     {
       "job": "build_universe",
       "message": "2 symbols in sectors.json are not in today's F&O universe (ignored): BAJAJHLDNG, ICICIPRULI",
-      "at": "2026-11-18T17:08:44+05:30"
+      "at": "2026-11-19T17:06:48+05:30"
     },
     {
       "job": "previous_close",
-      "message": "213 quote/candle previous-close mismatches: 360ONE (quote 1211.05 vs candle 1202.85), ABB (quote 6851.00 vs candle 6923.00), ABCAPITAL (quote 412.40 vs candle 411.50), ADANIENSOL (quote 1490.00 vs candle 1493.70), ADANIENT (quote 2684.20 vs candle 2745.10), ADANIGREEN (quote 1404.10 vs candle 1429.90), ADANIPORTS (quote 1902.60 vs candle 1917.00), ADANIPOWER (quote 205.30 vs candle 208.07), ALKEM (quote 5222.50 vs candle 5175.00), AMBER (quote 6236.50 vs candle 6245.50), AMBUJACEM (quote 384.80 vs candle 390.20), ANGELONE (quote 338.30 vs candle 349.80), APLAPOLLO (quote 2161.20 vs candle 2188.50), APOLLOHOSP (quote 8821.00 vs candle 8712.50), ASHOKLEY (quote 162.45 vs candle 160.50), ASIANPAINT (quote 2580.30 vs candle 2625.00), ASTRAL (quote 1230.30 vs candle 1242.60), ATHERENERG (quote 1901.10 vs candle 1908.60), AUBANK (quote 977.00 vs candle 993.10), AUROPHARMA (quote 1796.30 vs candle 1794.10)",
-      "at": "2026-11-18T17:09:45+05:30"
+      "message": "215 quote/candle previous-close mismatches: 360ONE (quote 1197.90 vs candle 1211.05), ABB (quote 6951.00 vs candle 6851.00), ABCAPITAL (quote 417.05 vs candle 412.40), ADANIENSOL (quote 1473.40 vs candle 1490.00), ADANIENT (quote 2703.10 vs candle 2684.20), ADANIGREEN (quote 1425.00 vs candle 1404.10), ADANIPORTS (quote 1917.10 vs candle 1902.60), ADANIPOWER (quote 210.50 vs candle 205.30), ALKEM (quote 5145.00 vs candle 5222.50), AMBER (quote 6697.00 vs candle 6236.50), AMBUJACEM (quote 396.80 vs candle 384.80), ANANDRATHI (quote 2369.60 vs candle 2375.10), ANGELONE (quote 336.45 vs candle 338.30), APLAPOLLO (quote 2147.90 vs candle 2161.20), APOLLOHOSP (quote 8738.00 vs candle 8821.00), ASHOKLEY (quote 166.15 vs candle 162.45), ASIANPAINT (quote 2595.00 vs candle 2580.30), ASTRAL (quote 1254.40 vs candle 1230.30), ATHERENERG (quote 1924.90 vs candle 1901.10), AUBANK (quote 983.90 vs candle 977.00)",
+      "at": "2026-11-19T17:09:11+05:30"
     }
   ]
 }
