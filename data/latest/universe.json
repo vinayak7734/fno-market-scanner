@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "dataset": "universe",
-  "trade_date": "2026-11-23",
-  "generated_at": "2026-11-23T18:03:37+05:30",
+  "trade_date": "2026-11-25",
+  "generated_at": "2026-11-24T19:10:06+05:30",
   "source": {
     "provider": "DHAN",
     "method": "instrument_master_detailed",
@@ -32,6 +32,13 @@
       "sector": "NBFC & Financial Services",
       "lot_size": 1550,
       "name": "ADITYA BIRLA CAPITAL LTD."
+    },
+    {
+      "symbol": "ACUTAAS",
+      "security_id": "5578",
+      "sector": "Unmapped",
+      "lot_size": 150,
+      "name": "ACUTAAS CHEMICALS LIMITED"
     },
     {
       "symbol": "ADANIENSOL",
@@ -102,6 +109,13 @@
       "sector": "NBFC & Financial Services",
       "lot_size": 2500,
       "name": "ANGEL ONE LIMITED"
+    },
+    {
+      "symbol": "APARINDS",
+      "security_id": "11491",
+      "sector": "Unmapped",
+      "lot_size": 50,
+      "name": "APAR INDUSTRIES LTD."
     },
     {
       "symbol": "APLAPOLLO",
@@ -664,13 +678,6 @@
       "name": "IDFC FIRST BANK LIMITED"
     },
     {
-      "symbol": "IEX",
-      "security_id": "220",
-      "sector": "NBFC & Financial Services",
-      "lot_size": 4350,
-      "name": "INDIAN ENERGY EXC LTD"
-    },
-    {
       "symbol": "INDHOTEL",
       "security_id": "1512",
       "sector": "Consumer Durables & Retail",
@@ -725,13 +732,6 @@
       "sector": "Oil & Gas",
       "lot_size": 4875,
       "name": "INDIAN OIL CORP LTD"
-    },
-    {
-      "symbol": "IREDA",
-      "security_id": "20261",
-      "sector": "NBFC & Financial Services",
-      "lot_size": 4525,
-      "name": "INDIAN RENEWABLE ENERGY"
     },
     {
       "symbol": "IRFC",
@@ -1540,6 +1540,8 @@
     }
   ],
   "unmapped_sector": [
+    "ACUTAAS",
+    "APARINDS",
     "COROMANDEL",
     "CUB",
     "DATAPATTNS",
