@@ -1,16 +1,16 @@
 {
   "token": {
     "method": "totp",
-    "expires_at": "2026-11-26T18:20:24+05:30",
+    "expires_at": "2026-11-26T18:58:37+05:30",
     "state": "ok",
-    "last_check": "2026-11-25T18:20:24+05:30",
+    "last_check": "2026-11-25T18:58:37+05:30",
     "last_result": "ok",
     "message": "check-auth"
   },
-  "updated_at": "2026-11-25T18:20:30+05:30",
+  "updated_at": "2026-11-25T18:58:45+05:30",
   "jobs": {
     "build_universe": {
-      "last_run": "2026-11-25T18:20:30+05:30",
+      "last_run": "2026-11-25T18:58:43+05:30",
       "result": "ok",
       "message": "218 F&O stocks"
     },
@@ -20,31 +20,26 @@
       "message": "218 stocks"
     },
     "sectors": {
-      "last_run": "2026-11-24T19:11:07+05:30",
+      "last_run": "2026-11-25T18:58:45+05:30",
       "result": "ok",
-      "message": "previous_close block updated"
+      "message": "premarket block updated"
     },
     "premarket": {
-      "last_run": "2026-11-20T17:38:38+05:30",
+      "last_run": "2026-11-25T18:58:45+05:30",
       "result": "ok",
       "message": "218 stocks"
     }
   },
   "alerts": [
     {
-      "job": "premarket",
-      "message": "208 Dhan/NSE previous-close mismatches: 360ONE (Dhan 1208.10 vs NSE 1197.90), ABB (Dhan 6934.50 vs NSE 6951.00), ABCAPITAL (Dhan 423.00 vs NSE 417.05), ADANIENSOL (Dhan 1491.80 vs NSE 1473.40), ADANIENT (Dhan 2709.00 vs NSE 2703.10), ADANIGREEN (Dhan 1435.00 vs NSE 1425.00), ADANIPOWER (Dhan 211.95 vs NSE 210.50), ALKEM (Dhan 5185.00 vs NSE 5145.00), AMBER (Dhan 6740.50 vs NSE 6697.00), AMBUJACEM (Dhan 400.00 vs NSE 396.80), ANANDRATHI (Dhan 2375.80 vs NSE 2369.60), ANGELONE (Dhan 348.30 vs NSE 336.45), APLAPOLLO (Dhan 2121.60 vs NSE 2147.90), APOLLOHOSP (Dhan 9200.00 vs NSE 8738.00), ASHOKLEY (Dhan 163.35 vs NSE 166.15), ASIANPAINT (Dhan 2608.30 vs NSE 2595.00), ASTRAL (Dhan 1252.60 vs NSE 1254.40), ATHERENERG (Dhan 1935.40 vs NSE 1924.90), AUBANK (Dhan 984.90 vs NSE 983.90), AUROPHARMA (Dhan 1799.00 vs NSE 1805.70)",
-      "at": "2026-11-20T17:38:38+05:30"
-    },
-    {
       "job": "build_universe",
       "message": "9 F&O stocks have no sector in sectors.json: ACUTAAS, APARINDS, COROMANDEL, CUB, DATAPATTNS, ICICILIFE, KARURVYSYA, NAVINFLUOR, SYRMA",
-      "at": "2026-11-25T18:20:30+05:30"
+      "at": "2026-11-25T18:58:43+05:30"
     },
     {
       "job": "build_universe",
       "message": "4 symbols in sectors.json are not in today's F&O universe (ignored): BAJAJHLDNG, ICICIPRULI, IEX, IREDA",
-      "at": "2026-11-25T18:20:30+05:30"
+      "at": "2026-11-25T18:58:43+05:30"
     }
   ]
 }
