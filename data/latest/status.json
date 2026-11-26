@@ -1,16 +1,16 @@
 {
   "token": {
     "method": "totp",
-    "expires_at": "2026-11-27T17:58:47+05:30",
+    "expires_at": "2026-11-27T18:36:25+05:30",
     "state": "ok",
-    "last_check": "2026-11-26T17:58:47+05:30",
+    "last_check": "2026-11-26T18:36:26+05:30",
     "last_result": "ok",
     "message": "check-auth"
   },
-  "updated_at": "2026-11-26T17:59:54+05:30",
+  "updated_at": "2026-11-26T18:36:34+05:30",
   "jobs": {
     "build_universe": {
-      "last_run": "2026-11-26T17:58:53+05:30",
+      "last_run": "2026-11-26T18:36:31+05:30",
       "result": "ok",
       "message": "218 F&O stocks"
     },
@@ -20,31 +20,36 @@
       "message": "218 stocks"
     },
     "sectors": {
-      "last_run": "2026-11-26T17:59:54+05:30",
+      "last_run": "2026-11-26T18:36:34+05:30",
       "result": "ok",
-      "message": "previous_close block updated"
+      "message": "premarket block updated"
     },
     "premarket": {
-      "last_run": "2026-11-25T18:58:45+05:30",
+      "last_run": "2026-11-26T18:36:34+05:30",
       "result": "ok",
       "message": "218 stocks"
     }
   },
   "alerts": [
     {
+      "job": "previous_close",
+      "message": "212 quote/candle previous-close mismatches: 360ONE (quote 1210.00 vs candle 1165.20), ABB (quote 6960.50 vs candle 7028.50), ABCAPITAL (quote 413.50 vs candle 422.00), ACUTAAS (quote 4079.90 vs candle 3993.00), ADANIENSOL (quote 1382.00 vs candle 1408.00), ADANIENT (quote 2660.00 vs candle 2668.50), ADANIGREEN (quote 1348.80 vs candle 1364.50), ADANIPORTS (quote 1911.30 vs candle 1926.30), ADANIPOWER (quote 208.30 vs candle 206.00), ALKEM (quote 5156.50 vs candle 5139.00), AMBER (quote 6826.00 vs candle 6940.00), AMBUJACEM (quote 390.95 vs candle 392.00), ANANDRATHI (quote 2410.00 vs candle 2380.00), ANGELONE (quote 358.00 vs candle 349.15), APARINDS (quote 14200.00 vs candle 14250.00), APLAPOLLO (quote 1481.50 vs candle 1476.00), APOLLOHOSP (quote 9222.50 vs candle 9300.00), ASHOKLEY (quote 156.15 vs candle 158.00), ASIANPAINT (quote 2543.00 vs candle 2621.20), ASTRAL (quote 1258.30 vs candle 1246.20)",
+      "at": "2026-11-26T17:59:54+05:30"
+    },
+    {
       "job": "build_universe",
       "message": "9 F&O stocks have no sector in sectors.json: ACUTAAS, APARINDS, COROMANDEL, CUB, DATAPATTNS, ICICILIFE, KARURVYSYA, NAVINFLUOR, SYRMA",
-      "at": "2026-11-26T17:58:53+05:30"
+      "at": "2026-11-26T18:36:31+05:30"
     },
     {
       "job": "build_universe",
       "message": "4 symbols in sectors.json are not in today's F&O universe (ignored): BAJAJHLDNG, ICICIPRULI, IEX, IREDA",
-      "at": "2026-11-26T17:58:53+05:30"
+      "at": "2026-11-26T18:36:31+05:30"
     },
     {
-      "job": "previous_close",
-      "message": "212 quote/candle previous-close mismatches: 360ONE (quote 1210.00 vs candle 1165.20), ABB (quote 6960.50 vs candle 7028.50), ABCAPITAL (quote 413.50 vs candle 422.00), ACUTAAS (quote 4079.90 vs candle 3993.00), ADANIENSOL (quote 1382.00 vs candle 1408.00), ADANIENT (quote 2660.00 vs candle 2668.50), ADANIGREEN (quote 1348.80 vs candle 1364.50), ADANIPORTS (quote 1911.30 vs candle 1926.30), ADANIPOWER (quote 208.30 vs candle 206.00), ALKEM (quote 5156.50 vs candle 5139.00), AMBER (quote 6826.00 vs candle 6940.00), AMBUJACEM (quote 390.95 vs candle 392.00), ANANDRATHI (quote 2410.00 vs candle 2380.00), ANGELONE (quote 358.00 vs candle 349.15), APARINDS (quote 14200.00 vs candle 14250.00), APLAPOLLO (quote 1481.50 vs candle 1476.00), APOLLOHOSP (quote 9222.50 vs candle 9300.00), ASHOKLEY (quote 156.15 vs candle 158.00), ASIANPAINT (quote 2543.00 vs candle 2621.20), ASTRAL (quote 1258.30 vs candle 1246.20)",
-      "at": "2026-11-26T17:59:54+05:30"
+      "job": "premarket",
+      "message": "212 Dhan/NSE previous-close mismatches: 360ONE (Dhan 1210.00 vs NSE 1165.20), ABB (Dhan 6960.50 vs NSE 7028.50), ABCAPITAL (Dhan 413.50 vs NSE 422.00), ACUTAAS (Dhan 4079.90 vs NSE 3993.00), ADANIENSOL (Dhan 1382.00 vs NSE 1408.00), ADANIENT (Dhan 2660.00 vs NSE 2668.50), ADANIGREEN (Dhan 1348.80 vs NSE 1364.50), ADANIPORTS (Dhan 1911.30 vs NSE 1926.30), ADANIPOWER (Dhan 208.30 vs NSE 206.00), ALKEM (Dhan 5156.50 vs NSE 5139.00), AMBER (Dhan 6826.00 vs NSE 6940.00), AMBUJACEM (Dhan 390.95 vs NSE 392.00), ANANDRATHI (Dhan 2410.00 vs NSE 2380.00), ANGELONE (Dhan 358.00 vs NSE 349.15), APARINDS (Dhan 14200.00 vs NSE 14250.00), APLAPOLLO (Dhan 1481.50 vs NSE 1476.00), APOLLOHOSP (Dhan 9222.50 vs NSE 9300.00), ASHOKLEY (Dhan 156.15 vs NSE 158.00), ASIANPAINT (Dhan 2543.00 vs NSE 2621.20), ASTRAL (Dhan 1258.30 vs NSE 1246.20)",
+      "at": "2026-11-26T18:36:34+05:30"
     }
   ]
 }
